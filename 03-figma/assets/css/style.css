@@ -1,0 +1,232 @@
+:root {
+  --var-primary-color: #828282;
+  --var-secondary-color: #070707;
+  --var-bg-color: #f6f6f6;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: min(90%, 970px);
+  margin: 0 auto;
+}
+
+.header {
+  padding: 26px 0px 25px;
+  border-bottom: 1px solid var(--var-primary-color);
+}
+.header__list {
+  padding-left: 0;
+  display: flex;
+    justify-content: center;
+      flex-wrap: wrap;
+  margin-bottom: 0;
+}
+.header__list li {
+  list-style-type: none;
+  font-size: 18px;
+  line-height: 28px;
+  margin-right: 43px;
+}
+.header__list li:last-child {
+  margin-right: 0px;
+}
+.header__list a {
+  text-decoration: none;
+  color: var(--var-primary-color);
+}
+.header__list .active a {
+  color: var(--var-secondary-color);
+}
+
+.first-screen {
+  margin: 0 auto;
+  margin-top: 16px;
+}
+.first-screen__wrapper-title {
+  font-weight: bold;
+  font-size: 48px;
+}
+.first-screen__wrapper-foto {
+  margin-top: 50px;
+}
+.first-screen__wrapper-foto img {
+  width: 100%;
+}
+
+.info {
+  background: var(--var-bg-color);
+}
+.info__wrapper {
+  padding: 101px 0;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.info__descr {
+  margin-top: 46px;
+  text-align: center;
+}
+.info__descr p {
+  margin-bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+}
+.info__descr p:last-child {
+  margin-bottom: 0px;
+  width: 321px;
+  margin: 0 auto;
+}
+
+.skills {
+  padding: 102px 0px 100px;
+}
+.skills__text {
+  width: 250px;
+  margin: 0px auto;
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+.skills__items {
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding-left: 0;
+  display: flex;
+	justify-content: space-between;
+  justify-self: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+}
+.skills__items li {
+  list-style-type: none;
+}
+.skills__items-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills__items-item_icon {
+  width: 80px;
+  text-align: center;
+}
+.skills__items-item_name {
+  width: 90px;
+  margin-top: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  color: var(--var-primary-color);
+}
+.skills__items-item-rating {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 60px;
+}
+.skills__items-item-rating li {
+  margin-right: 10px;
+}
+.skills__items-item-rating li:last-child {
+  margin-right: 0px;
+}
+.skills .name-margin {
+  margin-bottom: 20px;
+}
+
+.portfolio {
+  background: var(--var-bg-color);
+  padding: 102px 0px 30px 0px;
+}
+.portfolio__img {
+  margin-top: 47px;
+  margin-bottom: 40px;
+}
+.portfolio__img img {
+  width: 100%;
+}
+.portfolio__link {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.portfolio__link a {
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--var-primary-color);
+}
+
+
+.footer {
+  padding: 101px 0px;
+  width: 310px;
+  margin: 0 auto;
+}
+.footer__descr {
+  width: 306px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 17px;
+  line-height: 25px;
+}
+.footer__btn {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 55px;
+  width: 180px;
+  padding: 13px 0;
+  background: var(--var-secondary-color);
+  border-radius: 22px;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 2px;
+  outline: none;
+  border: none;
+}
+.footer__links {
+  margin-top: 29px;
+  width: 100%;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__links li {
+  list-style-type: none;
+  width: 40px;
+}
+.footer__links li img {
+  width: 100%;
+}
+.footer__subdescr {
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+  width: 200px;
+  color: var(--var-primary-color);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 34px;
+  text-align: center;
+}
+
+.star {
+  width: 26px;
+  height: 26px;
+  background: url("../icons/star-icon.png") center center no-repeat;
+}
+
+.star_black {
+  background: url("../icons/starBlack.png") center center no-repeat;
+}
