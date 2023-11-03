@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="wrapper-form">
+        <h1 class="form_title">Реєстрація нового учня</h1>
+        <form action="" method="post" class="form" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;"
+        >
+            <div class="wrapper__items">
+                <fieldset class="person-data">
+                    <legend>Персональні дані</legend>
+                    <div class="wrap-item">
+                        <label for="name">Повне ім'я</label>
+                        <input type="text" id="name" name="fullname" required>
+                    </div>
+                    <div class="wrap-item">
+                        <label for="mail">Email</label>
+                        <input type="email" id="mail" name="mail" required placeholder="example@mail.com">
+                    </div>
+                    <div class="wrap-item">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="wrap-item">
+                        <label for="password-second">Пароль ще раз</label>
+                        <input type="password" id="password-second" name="password" required>
+                    </div>
+                    <div class="wrap-item gender">
+                        <div class="gender-title">Стать</div>
+                        <div class="gender-wrap">
+                            <input type="radio" name="gender" value="man" id="man">
+                            <label for="man">чоловіча</label>
+                            <input type="radio" name="gender" value="woman" id="woman">
+                            <label for="woman">жіноча</label>
+                        </div>
+                    </div>
+                    <div class="wrap-item">
+                        <label for="age"> Вік</label>
+                        <input  type="number" name="age" id="age" required min="0" max="100">
+                    </div>
+                    <div class="wrap-item">
+                        <label for="adress">Повна адреса</label>
+                        <textarea name="full0adress" id="adress" rows="3" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="course">
+                    <legend>Вибір курсу</legend>
+                    <div class="wrap-item">
+                        <label for="course">Курс</label>
+                        <select name="course" id="course">
+                                <option disabled selected>-=Виберіть курс=-</option>
+                                <option value="front" name="frontend">Front-end</option>
+                                <option value="Back-End" name="beckend">Back-End</option>
+                                <option value="Project Management" name="project">Project Management</option>
+                                <option value="QA Manual" name="qa">QA Manual</option>
+                        </select>
+                    </div>
+                    <div class="wrap-item">
+                        <fieldset class="classes">
+                            <legend>Додаткові заняття</legend>
+                                <label for="english">Англійська мова</label>
+                                <input type="checkbox" id="english" name="english">
+                                <label for="web-design">Веб-дизайн</label>
+                                <input type="checkbox" id="web-design" name="web-design">
+                        </fieldset>
+                    </div>
+
+                    <div class="wrap-item date">
+                        <label for="date">Оберіть дату</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <div class="wrap-item ">
+                        <label for="phone">Ваш телефон</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                        placeholder="Format: 123-456-6789" required>
+                    </div>
+
+                </fieldset>
+                <fieldset class="other">
+                    <legend>Додаткові дані</legend>
+                    <div class="wrap-item photo">
+                        <span>Завантажте ваше фото</span>
+                        <label for="image" class="image">Оберіть фото</label>
+                        <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg">
+                    </div>
+                    <div class="wrap-item color">
+                        <label for="color">Оберіть колір робочого столу</label>
+                        <input type="color" id="color" name="color">
+                    </div>
+                    <div class="wrap-item range">
+                        <label for="range">Оцініть свої знання</label>
+                        <input type="range" id="range" name="range" min="0" max="10">
+                    </div>
+
+                </fieldset>
+            </div>
+
+
+            <div class="accept">
+                <label for="accept">
+                    <input type="checkbox" id="accept" name="accept" required>
+                    Я погоджуюсь з обробкою персональних даних
+                </label>
+            </div>
+            <div class="btn-wrapper">
+                <button type="reset">Очистити форму</button>
+                <button type="submit">Зареєструватися</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
