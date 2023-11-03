@@ -13,7 +13,7 @@
 <body>
     <div class="wrapper-form">
         <h1 class="form_title">Реєстрація нового учня</h1>
-        <form action="" method="post" class="form" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;"
+        <form method="post" class="form" id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;"
         >
             <div class="wrapper__items">
                 <fieldset class="person-data">
@@ -58,10 +58,10 @@
                         <label for="course">Курс</label>
                         <select name="course" id="course">
                                 <option disabled selected>-=Виберіть курс=-</option>
-                                <option value="front" name="frontend">Front-end</option>
-                                <option value="Back-End" name="beckend">Back-End</option>
-                                <option value="Project Management" name="project">Project Management</option>
-                                <option value="QA Manual" name="qa">QA Manual</option>
+                                <option id="frontend" >Front-end</option>
+                                <option id="backend" >Back-End</option>
+                                <option id="project-management" >Project Management</option>
+                                <option id="qa-manual">QA Manual</option>
                         </select>
                     </div>
                     <div class="wrap-item">
@@ -81,7 +81,7 @@
 
                     <div class="wrap-item ">
                         <label for="phone">Ваш телефон</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                         placeholder="Format: 123-456-6789" required>
                     </div>
 
