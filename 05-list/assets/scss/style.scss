@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #3B3F45;
+    height: 100vh;
+}
+.container {
+    width: min(90%, 534px);
+    margin: 0 auto;
+}
+
+.header {
+    padding: 19px 0 12px;
+    text-align: center;
+    background-color: #4A4F56;
+    margin-bottom: 20px;
+    color: #FF8984;
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 4px;
+    }
+}
+
+.list {
+    min-width: 534px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+    &__item {
+        list-style-type: none;
+        font-size: 18px;
+        padding: 12px 0 14px 12px;
+        background: #88839E;
+        color: #fff;
+        position: relative;
+        transition: all .1s ease-in;
+        &:nth-child(even) {
+            background: #7A7593;
+        }
+        &:hover {
+            background: #625E77;
+        }
+    }
+
+    .wrap-item {
+        display: inline-block;
+        position: relative;
+        transition: all .1s ease-in;
+    }
+    input {
+        display: none;
+    }
+
+    .custom-checkbox:checked + label::after {
+        content: "";
+        width: 90%;
+        height: 1px;
+        position: absolute;
+        left: 33px;
+        top: 12px;
+        background: #9B96AC;
+        transition: all .1s ease-in
+    } 
+
+    .custom-checkbox + label::before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        margin-right: 1em;
+        transition: all .1s ease-in
+    }
+    .custom-checkbox:checked + label::before {
+        content: "";
+        background-image: url("../icons/Vector.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+    li:has(input[type="checkbox"]):active {
+        color: red;
+    }
+    li:has(input[type="checkbox"]:checked){
+        &:active {
+            color: red;
+        }
+        background: #6f698a;
+        color: #9B96AC;
+        box-shadow: 0 3px 2px 0 rgba(0, 0, 0, .3);
+        z-index: 3;
+        position: relative;
+    }
+ 
+    span {
+        vertical-align: middle;
+        font-size: 12px;
+    }
+    span::before {
+        content: "(";
+    }
+    span::after {
+        content: ")";
+    }
+}
+.footer {
+    &__descr {
+        background: #4A4F56;  
+        font-size: 18px;
+        color: #FF8984;
+        text-align: center;
+        padding: 12px 0;
+    }
+}
