@@ -57,8 +57,16 @@ body {
   font-size: 27px;
   line-height: 32px;
 }
+.list__item label span {
+  display: inline-block;
+  padding-bottom: 3px;
+  vertical-align: middle;
+  margin-left: 9px;
+  font-size: 17px;
+}
 .list .wrap-item {
   display: inline-block;
+  padding-top: 3px;
   position: relative;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
@@ -72,7 +80,7 @@ body {
   height: 2px;
   position: absolute;
   left: 3px;
-  top: 17px;
+  top: 20px;
   background: #9B96AC;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
@@ -96,7 +104,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-.list li:has(input[type=checkbox]):active {
+li:has(input[type=checkbox]):active {
   color: red;
 }
 .list li:has(input[type=checkbox]:checked) {
@@ -109,12 +117,6 @@ body {
 }
 .list li:has(input[type=checkbox]:checked):active {
   color: red;
-}
-.list span {
-  display: inline-block;
-  margin-left: 9px;
-  vertical-align: middle;
-  font-size: 17px;
 }
 .list span::before {
   content: "(";
