@@ -6,14 +6,6 @@
     url("../font/Lucida\ Sans\ Unicode\ Regular.ttf");
 }
 
-@font-face {
-    font-family: "Weather Icons;";
-    font-style: normal;
-    font-weight: 400;
-    src: local(" Weather Icons;"),
-      url("../font/weathericons-regular-webfont.eot");
-  }
-
 :root {
   --main-color: #fff;
   --icon-color: rgba(255, 255, 255, 0.70);
