@@ -43,11 +43,14 @@ body {
         color: #fff;
         position: relative;
         transition: all .1s ease-in;
+        border: 2px solid transparent;
         &:nth-child(even) {
             background: #7A7593;
         }
         &:hover {
             background: #625E77;
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
         }
         label {
             font-size: 27px;
@@ -101,11 +104,11 @@ body {
         background-position: 50% 50%;
     }
     li:has(input[type="checkbox"]):active {
-        color: red;
+        background-color: red;
     }
     li:has(input[type="checkbox"]:checked){
         &:active {
-            color: red;
+            background-color: red;
         }
         background: #6f698a;
         color: #9B96AC;
@@ -114,12 +117,6 @@ body {
         position: relative;
     }
  
-    // span {
-    //     display: inline-block;
-    //     vertical-align: middle;
-    //     margin-left: 9px;
-    //     font-size: 17px;
-    // }
     span::before {
         content: "(";
     }

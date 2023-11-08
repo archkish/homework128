@@ -46,12 +46,15 @@ body {
   position: relative;
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
+  border: 2px solid transparent;
 }
 .list__item:nth-child(even) {
   background: #7A7593;
 }
 .list__item:hover {
   background: #625E77;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 .list__item label {
   font-size: 27px;
@@ -104,8 +107,8 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
-li:has(input[type=checkbox]):active {
-  color: red;
+.list li:has(input[type=checkbox]):active {
+  background-color: red;
 }
 .list li:has(input[type=checkbox]:checked) {
   background: #6f698a;
@@ -116,7 +119,7 @@ li:has(input[type=checkbox]):active {
   position: relative;
 }
 .list li:has(input[type=checkbox]:checked):active {
-  color: red;
+  background-color: red;
 }
 .list span::before {
   content: "(";
