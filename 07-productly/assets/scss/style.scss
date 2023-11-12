@@ -1,0 +1,90 @@
+@import "btn";
+@import "variables";
+
+@import "header";
+@import "first-screen";
+@import "features";
+@import "managers";
+@import "marketers";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin-inline: auto;
+}
+
+.wrapper {
+  padding: 50px 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  max-width: 525px;
+  &__subtitle{
+    padding-top: 20px;
+    color: $text-color;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+  }
+  &__title {
+    color: $title-color;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  &__descr {
+    margin-bottom: 40px;
+    color: $text-color;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.625rem;
+  }
+  &__list {
+    list-style: none;
+    & li:last-child p{
+      margin-bottom: 0;
+    }
+    &_title {
+      color: $title-color;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.625rem;
+      margin-bottom: 10px;
+    }
+    &_descr {
+      color: $text-color;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 1.625rem;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+#click {
+  background: $bg-click;
+}
+#design {
+  background: $bg-design;
+}
+#preference {
+  background: $bg-preference;
+}
+#five-second {
+  background: $bg-five-second;
+}

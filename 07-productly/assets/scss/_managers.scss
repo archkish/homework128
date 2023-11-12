@@ -1,0 +1,26 @@
+.managers {
+    .img {
+      position: relative;
+      bottom: 4px;
+    }
+    &_info {
+      position: relative;
+      left: 20px;
+    }
+    &__list {
+      li {
+        max-width: 505px;
+        display: flex;
+        gap: 30px;
+        svg {
+          position: relative;
+          top: 8px;
+          min-width: 35px;
+          min-height: 35px;
+        }
+      }
+    }
+    &_info {
+      padding-top: 24px;
+    }
+  }

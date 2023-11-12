@@ -1,0 +1,16 @@
+.btn {
+    border: 1px solid $gold;
+    background: #fff;
+    color: $title;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    line-height: 0.875rem;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 2px 2px 5px rgba($gold, .4);
+        background-color: rgba($gold, .1);
+    }
+}

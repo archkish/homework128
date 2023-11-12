@@ -1,0 +1,211 @@
+@import "variables";
+@import "button";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 121px 0 57px;
+}
+
+.container {
+  width: min(90%, 1170px);
+  margin: 0 auto;
+}
+.header {
+  padding: 0 0 40px;
+  text-align: center;
+  &__subtitle {
+    color: $sub-text;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__title {
+    color: $gold;
+    font-family: "Roboto", sans-serif;
+    font-size: 3.75rem;
+    line-height: 4.125rem;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+  }
+  &__icon {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 35px;
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 210px;
+      height: 1px;
+      color: $text;
+      background: $gold;
+      position: absolute;
+      top: 8px;
+      right: 25px;
+    }
+    &::after {
+      left: 25px;
+    }
+  }
+}
+
+.developer {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+
+  &__img {
+    width: 34%;
+    margin: 0 auto;
+    padding: 80px 0 70px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    .img_before {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-left: 1px solid $gold;
+        border-top: 1px solid $gold;
+        top: -16px;
+        left: -16px;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-right: 1px solid $gold;
+        border-top: 1px solid $gold;
+        top: -15px;
+        right: -16px;
+      }
+    }
+    .img_after {
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-left: 1px solid $gold;
+        border-bottom: 1px solid $gold;
+        bottom: -14px;
+        left: -18px;
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-right: 1px solid $gold;
+        border-bottom: 1px solid $gold;
+        bottom: -14px;
+        right: -15px;
+      }
+    }
+  }
+
+  &__divider-vertical {
+    width: 2px;
+    background-color: $gold;
+  }
+  &__info {
+    padding: 68px 0px 70px;
+    width: 34%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    max-width: 100%;
+    margin: 0 auto;
+    color: $title;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 900;
+    margin-bottom: 23px;
+    position: relative;
+  }
+
+  .divider {
+    width: 100px;
+    margin: 0 auto;
+    height: 1px;
+    background: $gold;
+    margin-bottom: 28px;
+  }
+
+  &__subtitle {
+    max-width: 100%;
+    color: $title;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.25rem;
+    margin-bottom: 25px;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 44px;
+    a:hover {
+      svg circle{
+        stroke: $icon-color;
+      }
+      svg path {
+        fill: $icon-color;
+      }
+    }
+  }
+
+  &__descr {
+    color: $text;
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    margin-bottom: 16px;
+  }
+
+  &__divider {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    gap: 5px;
+    span {
+      width: 10px;
+      height: 4px;
+      background-color: $gold;
+      &:nth-child(2) {
+        width: 20px;
+      }
+    }
+  }
+
+  &__btn {
+    text-align: center;
+  }
+}

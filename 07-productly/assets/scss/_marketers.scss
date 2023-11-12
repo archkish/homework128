@@ -1,0 +1,18 @@
+.marketers {
+    border-bottom: 1px solid rgba(188, 208, 229, 0.50);
+    padding-bottom: 38px;
+    .img {
+      position: relative;
+      bottom: 8px;
+    }
+    .info {
+      max-width: 486px;
+      padding-top: 10px;
+      &__title {
+        margin-bottom: 15px;
+      }
+      &__list_title {
+        margin-bottom: 12px;
+      }
+    }
+  }
