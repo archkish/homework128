@@ -1,44 +1,32 @@
 @font-face {
-  font-family: "Lucida Sans Unicode";
-  font-style: normal;
+  font-family: "Lucida";
+  src: url("../font/Lucida\ Sans\ Unicode\ Regular.woff2") format(woff2);
   font-weight: 400;
-  src: local("Lucida Sans Unicode"),
-    url("../font/Lucida\ Sans\ Unicode\ Regular.ttf");
 }
 
-:root {
-  --main-color: #fff;
-  --icon-color: rgba(255, 255, 255, 0.70);
-  --main-bg-color: #39C;
-  --border-color: #2b81ac;
-  --lisbon: #3399CC;
-  --paris: #33cccc;
-  --belgrade: #996699;
-  --venice: #c24747;
-  --tel-avive: #e2674a;
-  --cair: #ffcc66;
-  --new-york: #99cc99;
-  --new-delhi: #669999;
-  --san-francisco: #cc6699;
-  --tokyo: #339966;
-  --sydney: #666699;
-}
+@import "variables";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  box-shadow: 0 0 0 25px inset var(--border-color);
-  background: var(--main-bg-color);
-  font-family: "Lucida Sans Unicode";
-  color: var(--main-color);
-  min-height: 100%;
+
+body {
+  box-shadow: 0 0 0 25px inset $border-color;
+  background: $main-bg-color;
+  font-family: Lucida, sans-serif;
+  color: $main-color;
+  min-height: 100vh;
 }
+
 .container {
-  width: min(90%, 1166px);
+  width: min(90%, 1170px);
   margin-inline: auto;
-  padding: 60px 0 119px;
+}
+
+.screen-weather {
+    padding: 66px 0 119px;
 }
 
 .title {
@@ -46,92 +34,89 @@ html {
   margin-bottom: 31px;
   font-weight: 400;
 }
+
 .wrapper {
   cursor: url(../icons/cursor.png), pointer;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   font-size: 0;
-  border: 2px solid var(--main-color);
-  .item {
-    display: inline-block;
-    padding: 25px 0 34px;
-    border: 2px solid var(--main-color);
-    text-align: center;
+  padding: 2px;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  li {
     width: 25%;
-    border-collapse: separate;
-    li {
-      list-style: none;
-    }
-    &__city {
-      font-weight: 400;
+    padding: 2px;
+    .item__wrap {
+      padding: 23px 0 34px;
+      text-align: center;
       font-size:  1.375rem;
-      margin-bottom: 10px;
     }
-    &__weather {
-        font-size: 1.375rem;
-        color: var(--icon-color);
-        text-align: center;
-
+    .item__city {
+      margin-bottom: 9px;
+    }
+    .item__weather {
+        line-height: 2.625rem;
+        color: $icon-color;
+        .wi {
+            vertical-align: middle;
+            font-size: 2.625rem;
+            margin-left: 12px;
+        }
     }
   }
+
   .width50 {
     width: 50%;
   }
   .width100 {
     width: 100%;
   }
-  &:hover li {
+  &:hover li:not(:hover) {
     opacity: 0.7;
   }
-  & li:hover {
-    opacity: 1;
-  }
+
 }
 
 .greeting {
   font-size: 1rem;
 }
 
-.wi {
-    vertical-align: middle;
-    font-size: 2.625rem;
-    margin-left: 12px;
-}
 .wi-sunrise {
-    vertical-align:baseline;
     font-size: 1.6875rem;
     margin-left: 3px;
 }
 #lisbon {
-  background-color: var(--lisbon);
+  background-color: $lisbon;
 }
 #paris {
-  background-color: var(--paris);
+  background-color: $paris;
 }
 
 #belgrade {
-  background-color: var(--belgrade);
+  background-color: $belgrade;
 }
 #venice {
-  background-color: var(--venice);
+  background-color: $venice;
 }
 #tel-avive {
-  background-color: var(--tel-avive);
+  background-color: $tel-avive;
 }
 #cair {
-  background-color: var(--cair);
+  background-color: $cair;
 }
 #new-york {
-  background-color: var(--new-york);
+  background-color: $new-york;
 }
 #new-delhi {
-  background-color: var(--new-delhi);
+  background-color: $new-delhi;
 }
 #san-francisco {
-  background-color: var(--san-francisco);
+  background-color: $san-francisco;
 }
 #tokyo {
-  background-color: var(--tokyo);
+  background-color: $tokyo;
 }
 #sydney {
-  background-color: var(--sydney);
+  background-color: $sydney;
 }
