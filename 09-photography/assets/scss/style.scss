@@ -71,6 +71,7 @@ body {
   }
   &-heart, &-download {
     transition: all .6s ease;
+    border: none;
     opacity: 0;
     cursor: pointer;
     width: 40px;
@@ -111,5 +112,55 @@ body {
   &-date {
     color: $date-color;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .item {
+    &-bottom {
+      display: block;
+    }
+    &-name {
+      font-size: 0.8rem;
+    }
+    &-date {
+      font-size: 0.6rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .portrait__wrapper, .architect__wrapper, .life__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    .colspan {
+      grid-column: span 1;
+    } 
+    .rowspan {
+      grid-row: span 1;
+    }
+  }
+  .life__wrapper {
+    grid-template-rows: repeat(3, 370px);
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+  .architect__wrapper, .life__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 370px);
+  }
+  .portrait__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 370px);
+  }
+  .colspan {
+    grid-column: span 1;
+  }
+  
+  .rowspan {
+    grid-row: span 1;
   }
 }
