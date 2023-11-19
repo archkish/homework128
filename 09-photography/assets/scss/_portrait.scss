@@ -1,0 +1,50 @@
+.portrait {
+  padding: 120px 0;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 370px);
+    gap: 30px;
+  }
+  .item-1 {
+    background: url("../img/portrait/item-1.jpg") 50% 50% / cover no-repeat;
+  }
+  
+  .item-2 {
+    background: url("../img/portrait/item-2.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-3 {
+    background: url("../img/portrait/item-3.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-4 {
+    background: url("../img/portrait/item-4.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-5 {
+    background: url("../img/portrait/item-5.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-6 {
+    background: url("../img/portrait/item-6.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-7 {
+    background: url("../img/portrait/item-7.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-8 {
+    background: url("../img/portrait/item-8.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-9 {
+    background: url("../img/portrait/item-9.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-10 {
+    background: url("../img/portrait/item-10.jpg") 50% 50% / cover no-repeat;
+  
+  }
+}
+

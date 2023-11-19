@@ -1,0 +1,33 @@
+.life {
+  padding: 120px 0 0;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 370px);
+    gap: 30px;
+  }
+  .item-1 {
+    background: url("../img/live/image-1.jpg") 50% 50% / cover no-repeat;
+  }
+  
+  .item-2 {
+    background: url("../img/live/image-2.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-3 {
+    background: url("../img/live/image-3.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-4 {
+    background: url("../img/live/image-4.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-5 {
+    background: url("../img/live/image-5.jpg") 50% 50% / cover no-repeat;
+  
+  }
+  .item-6 {
+    background: url("../img/live/image-6.jpg") 50% 50% / cover no-repeat;
+  
+  }
+}
