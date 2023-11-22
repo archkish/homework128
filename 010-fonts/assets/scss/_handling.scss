@@ -1,0 +1,13 @@
+.handling {
+  padding-top: 60px;
+  p {
+    margin-bottom: 27px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      font-family: 'Sans-italic', sans-serif;
+    }
+  }
+
+}

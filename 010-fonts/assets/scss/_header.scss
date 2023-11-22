@@ -1,0 +1,46 @@
+.header {
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    top: -2px;
+  }
+  &__leng {
+    position: relative;
+    top: -2px;
+    a {
+      color: #000;
+      font-family: 'Tourney';
+      font-size: 1.2rem;
+      letter-spacing: 0.06rem;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+  &__nav {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    position: relative;
+    left: 1px;
+    a {
+      color: #000;
+      font-family: 'Staatliches';
+      font-size: 1.375rem;
+      letter-spacing: 0.04125rem;
+      text-decoration: none;
+      position: relative;
+    }
+    li:first-child > a::after {
+        content: "/";
+        position:absolute;
+        right: -16px;
+    }
+  }
+
+}

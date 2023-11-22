@@ -1,0 +1,49 @@
+.react {
+  padding-top: 60px;
+  p {
+    margin-bottom: 29px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  li {
+    margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    p {
+      margin-bottom: 39px;
+    }
+  }
+  .subtitle {
+    font-family: 'Sans-regular', sans-serif;
+    font-size: 1.75rem;
+    line-height: 3rem;
+    margin-bottom: 30px;
+  }
+  &__list {
+    list-style: none;
+    .jsx {
+      margin-bottom: 38px;
+    }
+    span {
+      font-family: 'Sans-bold', sans-serif;
+      position: relative;
+      display: inline-block;
+      text-indent: 21px;
+      color: #000;
+      font-size: 1.75rem;
+      font-style: normal;
+      line-height: 3rem; 
+    }
+    span::before {
+      content: "+";
+      color: #000;
+      display: inline-block;
+      font-size: 1.75rem;
+      font-weight: 700;
+      position: absolute;
+      left: -23px;
+    }
+  }
+}

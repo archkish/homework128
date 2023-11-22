@@ -1,0 +1,63 @@
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import 'fonts';
+@import 'header';
+@import 'core';
+@import 'react';
+@import 'handling';
+@import 'introduction';
+
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+a {
+  color: #000;
+}
+
+mark {
+  display: inline-block;
+  background: #DADADA;
+}
+
+p {
+  font-family: 'Sans-regular', sans-serif;
+  color: #000;
+  font-size: 1.75rem;
+  line-height: 3rem;
+}
+
+main {
+  padding-bottom: 90px;
+}
+
+.title {
+  color: #000;
+  display: inline-block;
+  font-family: 'Francois';
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.09rem;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 40px;
+  sup {
+    position: absolute;
+    top: -17px;
+    right: -104px;
+    color: #000;
+    text-transform: capitalize;
+    font-family: 'Farro';
+    font-size: 1.15rem;
+    font-style: normal;
+    letter-spacing: 0.064rem;
+  }
+}
