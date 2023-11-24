@@ -11,6 +11,8 @@
 @import 'react';
 @import 'handling';
 @import 'introduction';
+@import 'sidebar';
+@import 'popup';
 
 
 .container {
@@ -34,8 +36,16 @@ p {
   line-height: 3rem;
 }
 
-main {
+html {
+  background: url("../img/Vector.svg") 840px 151px/ contain no-repeat;
+  background-size: 42%;
+  background-attachment: fixed;
+}
+main  {
   padding-bottom: 90px;
+  padding-left: 415px;
+  position: relative;
+  top: -350px;
 }
 
 .title {
@@ -59,5 +69,15 @@ main {
     font-size: 1.15rem;
     font-style: normal;
     letter-spacing: 0.064rem;
+  }
+  &::before {
+    content: '';
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+    position: absolute;
+    top: -29px;
+    left: 0;
+
   }
 }
