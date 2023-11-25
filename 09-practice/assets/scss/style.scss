@@ -199,12 +199,12 @@ img {
   a {
     border: 1px solid $hover-color;
     background-color: #fff;
-    path {
+    svg path {
       fill: $hover-color;
     }
     &:hover {
       background-color: $hover-color;
-      path {
+      svg path {
         fill: #fff;
       }
     }
