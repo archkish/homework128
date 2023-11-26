@@ -8,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
   &__wrapper {
     display: flex;
     align-items: center;
@@ -18,6 +19,7 @@
   &__leng {
     position: relative;
     top: -2px;
+    transition: all .3s ease;
     a {
       color: #000;
       font-family: 'Tourney';
@@ -25,6 +27,9 @@
       letter-spacing: 0.06rem;
       text-decoration: none;
       text-align: center;
+      &:hover {
+        color: rgba(#000, .4);
+      }
     }
   }
   &__nav {
@@ -40,12 +45,24 @@
       letter-spacing: 0.04125rem;
       text-decoration: none;
       position: relative;
+      &:hover {
+        color: rgba(#000, .5);
+      }
+      &:hover::after {
+        color: #000;
+      }
     }
     li:first-child > a::after {
         content: "/";
-        position:absolute;
+        position: absolute;
         right: -16px;
+        pointer-events: none;
     }
   }
-
+  &__logo {
+    transition: all .5s ease;
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
 }

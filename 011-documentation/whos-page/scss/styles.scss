@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Staatliches';
+  src: url('../../assets/fonts/Staatliches-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Tourney';
+  src: url('../../assets/fonts/Tourney_Expanded-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../assets/fonts/Roboto.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@import '../../assets/scss/header';
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+}
+
+.cards {
+  padding: 150px 0;
+  &__list {
+    border-top: 1px solid #BFBFBF;
+    border-bottom: 1px solid #BFBFBF;
+    padding: 20px 15px 19px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  h2 {
+    color: #000;
+    font-family: 'Roboto';
+    font-size: 2.25rem;
+    line-height: 3rem;
+    letter-spacing: 0.09rem;
+    margin-bottom: 40px;
+    padding-left: 120px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 100px;
+      height: 8px;
+      background-color: #000;
+      position: absolute;
+      top: 20px;
+      left: 0;
+    }
+  }
+  .item {
+    transition: all 1s ease;
+    perspective: 1000px;
+    width: 270px;
+    height: 180px;
+    list-style: none;
+    cursor: pointer;
+  
+    .flip {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: all 1s ease;
+      transform-style: preserve-3d;
+    }
+  
+    .front,
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+    }
+  
+    .back {
+      background-color: #000;
+      transform: rotateX(180deg);
+      z-index: -1;
+      svg {
+        filter: invert(1)
+      }
+    }
+  
+    .front {
+      backface-visibility: hidden;
+      background-color: #a6a3a3;
+    }
+  
+    &:hover .flip {
+      transform: rotateX(180deg);
+    }
+  }
+}
+

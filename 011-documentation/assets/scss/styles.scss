@@ -12,7 +12,6 @@
 @import 'handling';
 @import 'introduction';
 @import 'sidebar';
-@import 'popup';
 
 
 .container {
@@ -37,17 +36,19 @@ p {
 }
 
 html {
-  background: url("../img/Vector.svg") 840px 151px/ contain no-repeat;
+  background: url("../img/Vector.svg") right 151px/ contain no-repeat;
   background-size: 42%;
   background-attachment: fixed;
 }
-main  {
-  padding-bottom: 90px;
-  padding-left: 415px;
-  position: relative;
-  top: -350px;
+.main  {
+  max-width: 785px;
 }
-
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  padding-top: 112px;
+}
 .title {
   color: #000;
   display: inline-block;
