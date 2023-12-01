@@ -51,7 +51,7 @@ body {
     border-radius: 20px;
     z-index: -1;
     object-fit: cover;
-    transition: all .3s ease;
+    transition: all .4s ease;
   }
   &:hover {
     img {
@@ -64,14 +64,13 @@ body {
     height: 100%;
     position: absolute;
     border-radius: 20px;
+    transition: all .4s ease;
     background: linear-gradient(0deg, #241F24 0%, rgba(91, 91, 91, 0.45) 34.11%, rgba(187, 186, 192, 0.26) 62.5%);
   }
   &:hover {
     &:before {
       opacity: 0;
     }
-    box-shadow: 5px 5px 10px 7px rgb(160, 149, 149);
-    // border-radius: 20px;
     .item-heart, .item-download {
       opacity: 1;
     }
