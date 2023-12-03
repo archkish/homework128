@@ -1,0 +1,12 @@
+.header {
+  border-bottom: 1px solid #EFEEF3;
+  &-wrap {
+    display: flex;
+    align-items: start;
+    &__logo {
+      padding: 22px 0;
+      transition: all .4s ease;
+      cursor: pointer;
+    }
+  }
+}

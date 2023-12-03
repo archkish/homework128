@@ -1,0 +1,82 @@
+.services {
+  padding: 181px 0 99px;
+  &__sub {
+    color: #7690A8;
+    font-family: "Roboto Regular";
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    padding-left: 3px;
+  }
+  &__title {
+    color: #16133D;
+    font-family: "Nunito";
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.0125rem;
+    margin-bottom: 32px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    padding: 40px 40px 38px;
+    border: 1px solid #E5EAF4;
+    width: 370px;
+    border-radius: 12px;
+    background: #FFF;
+    &:hover {
+      border-color: #3DB370;
+      .item__logo {
+        @extend %green-megaphone;
+      }
+      .house {
+        @extend %green-house;
+      }
+      .phone {
+        @extend %green-phone;
+      }
+    }
+  }
+  .item__logo {
+    border: 1px solid #E5EAF4;
+    border-radius: 18px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 30px;
+    @extend %blue-megaphone;
+  }
+  .house {
+    @extend %blue-house;
+  }
+  .phone {
+    @extend %blue-phone;
+  }
+  .item__title {
+    color: #16133D;
+    font-family: "Roboto Regular";
+    font-size: 1.5rem;
+    line-height: 1.33rem;
+    letter-spacing: 0.0125rem;
+    margin-bottom: 15px;
+  }
+  .item__descr {
+    color: #16133D;
+    font-family: "Roboto Regular";
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 24px;
+    max-width: 274px;
+  }
+  .item__link {
+    font-family: "Roboto";
+    font-size: 1rem;
+    a {
+      text-decoration: none;
+      color: #3DB370;
+    }
+  }
+}
