@@ -46,3 +46,23 @@
       text-align: center;
     }
   }
+
+  @media screen and (max-width: 1025px) {
+    .features {
+      &__wrapper {
+        justify-content: center;
+        column-gap: 15vw;
+      }
+      &__title {
+        font-size: 32px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    .features {
+      &__wrapper {
+        column-gap: 5vw;
+      }
+    }
+  }

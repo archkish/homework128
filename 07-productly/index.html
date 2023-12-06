@@ -16,21 +16,26 @@
 
     <header class="header">
         <div class="container">
-            <nav class="header__nav">
+            <div class="header__nav">
                 <div class="header__logo">
                     <a href="#"><img src="assets/icons/Logo.png" alt="logo"></a>
                 </div>
-                <ul class="header__links">
-                    <li><a href="">Product</a></li>
-                    <li><a href="">Customers</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Resources</a></li>
-                </ul>
+                <nav>
+                    <ul class="header__links">
+                        <li><a href="">Product</a></li>
+                        <li><a href="">Customers</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Resources</a></li>
+                    </ul>
+                </nav>
                 <div class="header__btns">
                     <button type="button" class="header__btns_btn btn">Sign In</button>
                     <button type="button" class="header__btns_btn btn btn_active">Sign Up</button>
                 </div>
-            </nav>
+                <div class="hamburger">
+                    <button type="button">---</button>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -47,6 +52,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
         <section class="features">
             <div class="container">
@@ -171,7 +177,7 @@
             <div class="footer__logo">
                 <a href="#"><img src="assets/icons/Logo.png" alt="logo"></a>
             </div>
-            <div>
+            <div class="footer__links">
                 <h2 class="footer__title">Quick Links</h2>
                 <ul>
                     <li><a href="#">About Us</a></li>
@@ -180,7 +186,7 @@
                     <li><a href="#">FAQ</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="footer__stuff">
                 <h2 class="footer__title">Legal Stuff</h2>
                 <ul>
                     <li><a href="#">Disclaimer</a></li>

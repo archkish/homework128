@@ -89,3 +89,32 @@ body {
 #five-second {
   background: $bg-five-second;
 }
+.design, .managers, .marketers {
+  .img {
+    max-width: 400px;
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1025px) {
+  .wrapper {
+    gap: 30px;
+  }
+  .info {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .design, .managers, .marketers {
+    img {
+      display: none;
+    }
+  }
+  .wrapper {
+    padding: 0 30px;
+  }
+}

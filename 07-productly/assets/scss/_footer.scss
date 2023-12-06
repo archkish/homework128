@@ -57,3 +57,19 @@
     max-width: 280px;
   }
 }
+
+@media screen and (max-width: 1025px) {
+  .footer {
+    &__title {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+    li a {
+      font-size: 0.9rem;
+      line-height: 1rem;
+    }
+    &__wrapper {
+      max-width: 300px;
+    }
+  }
+}
