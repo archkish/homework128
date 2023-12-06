@@ -31,30 +31,37 @@
     &:hover {
       border-color: #3DB370;
       .item__logo {
-        @extend %green-megaphone;
-      }
-      .house {
-        @extend %green-house;
-      }
-      .phone {
-        @extend %green-phone;
+        .blue-icon {
+          display: none;
+
+        }
+        .green-icon {
+          display: block;
+        }
       }
     }
   }
   .item__logo {
+    padding: 10px;
     border: 1px solid #E5EAF4;
     border-radius: 18px;
     width: 64px;
     height: 64px;
     margin-bottom: 30px;
-    @extend %blue-megaphone;
-  }
-  .house {
-    @extend %blue-house;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    .green-icon {
+      display: none;
+    }
   }
   .phone {
-    @extend %blue-phone;
+    svg{
+      width: 25px;
+      height: 36px;
+    }
   }
+
   .item__title {
     color: #16133D;
     font-family: "Roboto Regular";
