@@ -49,13 +49,43 @@
     }
   }
 
-  @media screen and (max-width: 980px) {
-    .header {
-      &__links {
-        display: none;
-      }
-      .hamburger {
-        display: block;
+@media screen and (max-width: 980px) {
+  .header {
+    &__links {
+      display: none;
+    }
+    .hamburger {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header {
+    &__btns {
+      &_btn {
+        width: 90px;
+        height: 40px;
+        padding: 10px 20px;
+        font-size: 0.8rem;
       }
     }
   }
+}
+
+@media screen and (max-width: 620px) {
+  .header {
+    &__logo {
+      padding-right: 200px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .header {
+    &__logo {
+      padding-right: 0;
+    }
+  }
+}

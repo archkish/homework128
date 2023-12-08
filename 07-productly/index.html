@@ -13,7 +13,29 @@
     <title>Document</title>
 </head>
 <body>
-
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+        <div class="mobile-menu__top">
+          <div class="mobile-menu__logo">
+            <a href="#"><img src="assets/icons/Logo.png" alt="logo"></a>
+          </div>
+          <div class="hamburger-wrap">
+            <button id="hamburger_mobile" class="hamburger hamburger--slider-r is-active" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+        <nav>
+            <ul class="mobile_header_links">
+                <li><a href="">Product</a></li>
+                <li><a href="">Customers</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Resources</a></li>
+            </ul>
+        </nav>
+      </div>
     <header class="header">
         <div class="container">
             <div class="header__nav">
@@ -32,9 +54,13 @@
                     <button type="button" class="header__btns_btn btn">Sign In</button>
                     <button type="button" class="header__btns_btn btn btn_active">Sign Up</button>
                 </div>
-                <div class="hamburger">
-                    <button type="button">---</button>
-                </div>
+                <div class="hamburger-wrapper">
+                    <button id="hamburger_main" class="hamburger hamburger--slider-r" type="button">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                    </button>
+                  </div>
             </div>
         </div>
     </header>
@@ -207,5 +233,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        function toggleMobileNav() {
+          document.body.classList.toggle('open-mobile-menu')
+          window.hamburger_main.classList.toggle('is-active')
+        }
+        window.hamburger_main.addEventListener('click', toggleMobileNav)
+        window.hamburger_mobile.addEventListener('click', toggleMobileNav)
+                
+       </script>
 </body>
 </html>

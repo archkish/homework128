@@ -8,6 +8,7 @@
 @import "managers";
 @import "marketers";
 @import "footer";
+@import "hamburger";
 
 * {
   margin: 0;
@@ -76,6 +77,69 @@ body {
     }
   }
 }
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(#000, .6);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s ease;
+}
+
+
+.mobile-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 350px;
+  height: 100vh;
+  background-color: rgba(#FFF, .9);
+  z-index: 101;
+  transform: translateX(-100%);
+  transition: all .4s ease;
+  &__top {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $active-color;
+    margin-bottom: 10px;
+  }
+  nav {
+    overflow-y: auto;
+    height: calc(100vh - 97px);
+  }
+}
+.mobile_header_links {
+  a {
+    display: inline-block;
+    width: 100%;
+    font-size: 1.7rem;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: $active-color;
+    background-color: transparent;
+    &:hover {
+      background-color: darken($active-color, 5%);
+      color: #fff;
+    }
+  }
+}
+.open-mobile-menu {
+  .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-menu {
+    transform: translateX(0);
+  }
+}
+
 
 #click {
   background: $bg-click;
