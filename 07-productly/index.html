@@ -13,7 +13,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="overlay"></div>
+    <div class="overlay" id="overlay"></div>
     <div class="mobile-menu">
         <div class="mobile-menu__top">
           <div class="mobile-menu__logo">
@@ -240,6 +240,7 @@
         }
         window.hamburger_main.addEventListener('click', toggleMobileNav)
         window.hamburger_mobile.addEventListener('click', toggleMobileNav)
+        window.overlay.addEventListener('click',toggleMobileNav)
                 
        </script>
 </body>
