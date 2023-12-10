@@ -1,0 +1,81 @@
+.footer-wrapper {
+  background-color: #F4F4F4;
+}
+
+.footer {
+  padding: 72px 0 30px;
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+  &__title {
+    font-family: 'Red Hat Regular', sans-serif ;
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: 0.15rem;
+    margin-bottom: 30px;
+  }
+  &__phone, &__mail{
+    font-family: 'Lato';
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  &__phone {
+    margin-bottom: 25px;
+  }
+  &__links {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 5px;
+    gap: 23px;
+    li {
+      width: 50px;
+      height: 50px;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 10px 13px 10px;
+      border: 1px solid #565656;
+      &:hover {
+        background-color: #565656;
+        svg path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  &__copy {
+    font-family: 'Lato';
+    font-size: 0.75rem;
+    line-height: 1rem;
+    letter-spacing: 0.075rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    &__info {
+      flex-direction: column;
+      text-align: center;
+      gap: 52px;      
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    &__title {
+      font-size: 2rem;
+      line-height: 4rem;
+      letter-spacing: 0.15rem;
+      margin-bottom: 30px;
+    }
+  }
+}
