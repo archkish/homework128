@@ -60,6 +60,7 @@ p {
   letter-spacing: 0.05938rem;
 }
 
+
 .container {
   width: min(90%, 1170px);
   margin: 0 auto;
@@ -80,11 +81,20 @@ p {
   margin-bottom: 24px;
 }
 
+.img-wrapper {
+  aspect-ratio: 117/50;
+}
+
 .description {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (max-width: 1024px) {
+  .img-wrapper {
+    aspect-ratio: 70/38;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -93,6 +103,9 @@ p {
   }
   p {
     font-size: 1rem;
+  }
+  .img-wrapper {
+    aspect-ratio: 1;
   }
 }
 
