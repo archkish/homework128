@@ -112,7 +112,8 @@ body {
   }
   nav {
     overflow-y: auto;
-    height: calc(100vh - 97px);
+    margin-bottom: 50px;
+    // height: calc(100vh - 97px);
   }
 }
 .mobile_header_links {
@@ -155,7 +156,7 @@ body {
 }
 .design, .managers, .marketers {
   .img {
-    max-width: 400px;
+    // max-width: 400px;
     img {
       width: 100%;
     }
@@ -173,12 +174,16 @@ body {
 }
 
 @media screen and (max-width: 769px) {
-  .design, .managers, .marketers {
-    img {
-      display: none;
-    }
-  }
   .wrapper {
-    padding: 0 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+  }
+  .info {
+    max-width: 80%;
+  }
+  .design .wrapper, .marketers .wrapper {
+    flex-direction: column-reverse;
   }
 }

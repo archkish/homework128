@@ -67,32 +67,10 @@
 
 @media screen and (max-width: 769px) {
   .first-screen {
-    &__descr{
-      width: 100vw;
-    }
     &__wrapper {
       flex-direction: column;
       flex-direction: column-reverse;
       position: relative;
-      &::after {
-        content: "";
-        background: url('../images/Image.png') top right / contain no-repeat;
-        opacity: 0.3;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        z-index: -1; 
-      }
-
-    }
-    .img {
-      text-align: center;
-      img {
-        width: 50%;
-        display: none;
-      }
     }
   }
 }

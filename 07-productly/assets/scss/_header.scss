@@ -58,6 +58,9 @@
       display: block;
     }
   }
+  .header__btns.mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -76,8 +79,25 @@
 @media screen and (max-width: 620px) {
   .header {
     &__logo {
-      padding-right: 200px;
       padding-bottom: 10px;
+    }
+    &__btns {
+      display: none;
+      &_btn {
+          width: 110px;
+          height: 46px;
+          padding: 13px 24px;
+          font-weight: 600;
+          line-height: 1rem;
+      }
+    }
+  }
+
+  .header__btns.mobile {
+    padding-left: 20px;
+    display: block;
+    button {
+      margin-left: 30px;
     }
   }
 }

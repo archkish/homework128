@@ -2,6 +2,8 @@
 <html lang="en">
 <head>        
     <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/animate.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;700&family=Poppins:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    <title>Document</title>
+    
 </head>
 <body>
     <div class="overlay" id="overlay"></div>
@@ -35,24 +37,28 @@
                 <li><a href="">Resources</a></li>
             </ul>
         </nav>
+        <div class="header__btns mobile">
+            <button type="button" class="header__btns_btn btn">Sign In</button>
+            <button type="button" class="header__btns_btn btn btn_active">Sign Up</button>
+        </div>
       </div>
     <header class="header">
         <div class="container">
             <div class="header__nav">
-                <div class="header__logo">
+                <div class="header__logo wow animate__animated animate__pulse">
                     <a href="#"><img src="assets/icons/Logo.png" alt="logo"></a>
                 </div>
                 <nav>
                     <ul class="header__links">
-                        <li><a href="">Product</a></li>
-                        <li><a href="">Customers</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Resources</a></li>
+                        <li class="wow animate__animated animate__pulse" data-wow-delay="0.5s"><a href="">Product</a></li>
+                        <li class="wow animate__animated animate__pulse" data-wow-delay="1.5s"><a href="">Customers</a></li>
+                        <li class="wow animate__animated animate__pulse" data-wow-delay="2s"><a href="">Pricing</a></li>
+                        <li class="wow animate__animated animate__pulse" data-wow-delay="2.5s"><a href="">Resources</a></li>
                     </ul>
                 </nav>
                 <div class="header__btns">
-                    <button type="button" class="header__btns_btn btn">Sign In</button>
-                    <button type="button" class="header__btns_btn btn btn_active">Sign Up</button>
+                    <button type="button" class="header__btns_btn btn wow animate__animated animate__pulse" data-wow-delay="3s">Sign In</button>
+                    <button type="button" class="header__btns_btn btn btn_active wow animate__animated animate__pulse" data-wow-delay="3.5s">Sign Up</button>
                 </div>
                 <div class="hamburger-wrapper">
                     <button id="hamburger_main" class="hamburger hamburger--slider-r" type="button">
@@ -68,12 +74,12 @@
         <section class="first-screen">
             <div class="container">
                 <div class="first-screen__wrapper">
-                    <div class="first-screen__info">
+                    <div class="first-screen__info wow animate__animated animate__slideInLeft" data-wow-delay="0.5s">
                         <h1 class="first-screen__info_title">The Design Thinking superpowers</h1>
                         <p class="first-screen__descr">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
                         <button type="button" class="first-screen__info_btn btn btn_big btn_active">Get started</button>
                     </div>
-                    <div class="img">
+                    <div class="img wow animate__animated animate__slideInRight">
                         <img src="assets/images/Image.png" alt="funny-people">
                     </div>
                 </div>
@@ -84,22 +90,22 @@
             <div class="container">
                 <h2 class="features__title">We design tools to unveil your superpowers</h2>
                 <div class="features__wrapper">
-                    <div class="features__item">
+                    <div class="features__item wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
                         <div class="features__item-icon" id="click"><img src="assets/icons/arrow.png" alt="arrow"></div>
                         <div class="features__item-title">First click tests</div>
                         <div class="features__item-descr">While most people enjoy casino gambling,</div>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item wow animate__animated animate__zoomIn" data-wow-delay="1s">
                         <div class="features__item-icon" id="design"><img src="assets/icons/line.png" alt="line"></div>
                         <div class="features__item-title">Design surveys</div>
                         <div class="features__item-descr">Sports betting, lottery and bingo playing for the fun</div>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item wow animate__animated animate__zoomIn" data-wow-delay="1.5s">
                         <div class="features__item-icon" id="preference"><img src="assets/icons/heart.png" alt="heart"></div>
                         <div class="features__item-title">Preference tests</div>
                         <div class="features__item-descr">The Myspace page defines the individual.</div>
                     </div>
-                    <div class="features__item">
+                    <div class="features__item wow animate__animated animate__zoomIn" data-wow-delay="2s">
                         <div class="features__item-icon" id="five-second"><img src="assets/icons/time.png" alt="time"></div>
                         <div class="features__item-title">Five second tests</div>
                         <div class="features__item-descr">Personal choices and the overall personality of the person. </div>
@@ -113,7 +119,7 @@
         <section class="design">
             <div class="container">
                 <div class="wrapper">
-                    <div class="info">
+                    <div class="info wow animate__animated animate__slideInLeft">
                         <div class="info__subtitle">Effortless Validation for</div>
                         <h2 class="info__title">Design Professionals</h2>
                         <p class="info__descr">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
@@ -132,15 +138,15 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="img"><img src="assets/images/man-phone.jpg" alt="man-with-phone"></div>
+                    <div class="img wow animate__animated animate__slideInRight" data-wow-delay="0.25s"><img src="assets/images/man-phone.jpg" alt="man-with-phone"></div>
                 </div>
             </div>
         </section>
         <section class="managers">
             <div class="container">
                 <div class="wrapper">
-                    <div class="img"><img src="assets/images/notebook.jpg" alt="man-laptop"></div>
-                    <div class="info managers_info">
+                    <div class="img wow animate__animated animate__slideInRight" data-wow-delay="0.25s"><img src="assets/images/notebook.jpg" alt="man-laptop"></div>
+                    <div class="info managers_info wow animate__animated animate__slideInRight" data-wow-delay="0.25s">
                         <div class="info__subtitle">Easier decision making for</div>
                         <h2 class="info__title">Product Managers</h2>
                         <p class="info__descr">The Myspace page defines the individual, his or her characteristics, traits, personal choices and the overall personality of the person. </p>
@@ -174,7 +180,7 @@
         <section class="marketers">
             <div class="container">
                 <div class="wrapper">
-                    <div class="info">
+                    <div class="info wow animate__animated animate__slideInLeft" data-wow-delay="0.25s">
                         <div class="info__subtitle">Optimisation for</div>
                         <h2 class="info__title">Marketers</h2>
                         <p class="info__descr">Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. </p>
@@ -193,7 +199,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="img"><img src="assets/images/deck.jpg" alt="man-with-phone"></div>
+                    <div class="img wow animate__animated animate__slideInRight" data-wow-delay="0.25s"><img src="assets/images/deck.jpg" alt="man-with-phone"></div>
                 </div>
             </div>
         </section>
@@ -241,7 +247,10 @@
         window.hamburger_main.addEventListener('click', toggleMobileNav)
         window.hamburger_mobile.addEventListener('click', toggleMobileNav)
         window.overlay.addEventListener('click',toggleMobileNav)
-                
-       </script>
+    </script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 </body>
 </html>
