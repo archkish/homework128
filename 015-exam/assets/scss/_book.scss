@@ -1,0 +1,132 @@
+.book {
+  background-position: center center;
+  background-size: cover;
+  &__wrapper {
+    display: flex;
+    justify-content: start;
+    padding: 220px 0 120px;
+  }
+  &__item {
+    max-width: 648px;
+    padding: 44px 32px;
+    background: rgba(35, 35, 35, 0.90);
+  }
+  &__tag {
+    font-family: "Josefine Light", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.125rem;
+    color: #FFF;
+    margin-bottom: 16px;
+  }
+  &__title {
+    color: #FFF;
+    font-family: "Josefine Regular", sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  &__descr {
+    color: #FFF;
+    font-family: "Josefine Light", sans-serif;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 24px;
+  }
+  &__btn {
+    cursor: pointer;
+    width: 213px;
+    height: 60px;
+    color: #FFF;
+    font-family: "Aleo";
+    font-size: 1rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    background: linear-gradient(45deg, rgba(72,108,254,1) 0%, rgba(72,108,254,1) 40%, rgba(83,114,253,1) 40%, rgba(83,114,253,1) 100%);
+    background-size: 115%;
+    padding: 20px 31px;
+    &:hover {
+      color: #000;
+      background-size: 300%;
+    }
+    &:focus{
+      outline: 2px solid #1a023e;
+    }
+  }
+}
+
+.second {
+  .book__wrapper {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .book {
+    &__item {
+      max-width: 558px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .book {
+    &__item {
+      max-width: 550px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .book {
+    &__wrapper {
+      padding: 120px 0;
+      justify-content: center;
+    }
+    &__item {
+      max-width: 720px;
+      padding: 44px 32px;
+    }
+    &__tag {
+      margin-bottom: 14px;
+    }
+    &__descr {
+      margin-bottom: 28px;
+    }
+  }
+  .second {
+    .book__wrapper {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .book {
+    .container {
+      width: min(100%, 540px)
+    }
+    &__item {
+      padding-top: 42px;
+    }
+    &__title {
+      margin-bottom: 19px;
+    }
+    &__descr {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .book {
+    &__wrapper {
+      padding: 60px 10px;
+    }
+  }
+}

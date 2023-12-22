@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://github.com/archkish/homework128/tree/main/015-exam/sitemap.xml

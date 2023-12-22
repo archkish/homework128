@@ -1,0 +1,133 @@
+.response {
+  background-position: center center;
+  background-size: cover;
+  &__wrapper {
+    padding: 120px 0 180px;
+  }
+  &__title {
+    font-family: "Aleo";
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    color: #FFF;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  &__info {
+    display: flex;
+    justify-content: start;
+  }
+  .info__img {
+    min-width: 440px;
+  }
+  .info__text {
+    padding: 48px 60px 48px 60px;
+    background:#333;
+    &-name {
+      color: #FFF;
+      font-family: "Josefine Regular", sans-serif;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    &-blockquote {
+      p {
+        position: relative;
+        text-indent: 34px;
+        color: #FFF;
+        font-family: "Josefine Light", sans-serif;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.1rem;
+        &::before {
+          content: "";
+          width: 20px;
+          height: 20px;
+          background: url('../img/q.svg');
+          background-size: 20px 20px;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: -5px;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 1360px) {
+  .response {
+    background-position: left 5px top -100px;
+    background-size: cover;
+    .info__img {
+      min-width: 380px;
+    }
+    .info__text {
+      padding: 46px 60px 48px 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .response {
+    background-position: left -30px top;
+    background-size: cover;
+    .info__img {
+      min-width: 320px;
+    }
+    .info__text {
+      padding: 48px 60px 48px 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .response {
+    &__wrapper {
+      padding: 63px 24px 120px;
+    }
+    &__info {
+      flex-direction: column;
+      .info__img {
+        max-height: 336px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 577px) {
+  .response {
+    background-position: center center;
+    &__wrapper {
+      padding: 60px 18px 120px;
+    }
+    .info__text {
+      padding: 48px 55px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .response {
+    .info__img {
+      height: 100%;
+    }
+    &__wrapper {
+      padding: 60px 10px;
+    }
+    .info__text {
+      padding: 48px 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .response {
+    &__info {
+      .info__img {
+        max-width: 540px;
+      }
+    }
+  }
+}
