@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="container">
+        <h1 class="header-title">
+          Lesson-1
+        </h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="task-wrapper">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="task1-tab" data-bs-toggle="tab" data-bs-target="#task1-tab-pane" type="button" role="tab" aria-controls="task1-tab" aria-selected="true">Task - 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task2-tab" data-bs-toggle="tab" data-bs-target="#task2-tab-pane" type="button" role="tab" aria-controls="task2-tab" aria-selected="false">Task - 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task3-tab" data-bs-toggle="tab" data-bs-target="#task3-tab-pane" type="button" role="tab" aria-controls="task3-tab" aria-selected="false">Task - 3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task4-tab" data-bs-toggle="tab" data-bs-target="#task4-tab-pane" type="button" role="tab" aria-controls="task4-tab" aria-selected="false">Task - 4</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task5-tab" data-bs-toggle="tab" data-bs-target="#task5-tab-pane" type="button" role="tab" aria-controls="task5-tab" aria-selected="false">Task - 5</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task6-tab" data-bs-toggle="tab" data-bs-target="#task6-tab-pane" type="button" role="tab" aria-controls="task6-tab" aria-selected="false">Task - 6</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="task1-tab-pane" role="tabpanel" aria-labelledby="task1-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter your name</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="name:" minlength="2">
+                    <label for="name">Name:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#nameModal" onclick="getName()">
+                    Say hello
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="nameModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="name-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="task2-tab-pane" role="tabpanel" aria-labelledby="task2-tab" tabindex="0">
+              <div class="title">Enter you birth date:</div>
+              <form class="form">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control input" id="b-month" placeholder="Місяць:" maxlength="2">
+                  <label for="b-month">Month:</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control input" id="b-day" placeholder="День:" maxlength="2">
+                  <label for="b-day">Day:</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control input" id="b-year" placeholder="Рік:" maxlength="4">
+                  <label for="b-year">Year:</label>
+                </div>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="getAge()">
+                  Get age
+                </button>
+                <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+              </form>
+              <div class="modal fade" id="exampleModal" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="answer"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="task3-tab-pane" role="tabpanel" aria-labelledby="task3-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter one side of square</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="side" placeholder="name:" minlength="2">
+                    <label for="side">Side:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#squareModal" onclick="getPer()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="squareModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="square-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="task4-tab-pane" role="tabpanel" aria-labelledby="task4-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter circle radius</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="radius" placeholder="name:" minlength="2">
+                    <label for="radius">Radius:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#areaModal" onclick="getArea()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="areaModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="area-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="tab-pane fade" id="task5-tab-pane" role="tabpanel" aria-labelledby="task5-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter distance and time</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="distance" placeholder="name:">
+                    <label for="distance">Distance in km:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="time" placeholder="name:">
+                    <label for="time">Time in hours:</label>
+                  </div>
+                  <button type="button" class="btn btn-light btn-speed"  data-bs-target="#areaModal" onclick="getSpeed()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset" onclick="getRes()">Reset</button>
+                  <div class="speed-answer res"></div>
+                </form>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="task6-tab-pane" role="tabpanel" aria-labelledby="task6-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter the amount of dollars</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="dollars" placeholder="dollars:">
+                    <label for="dollars">Amount of dollars:</label>
+                  </div>
+                  <button type="button" class="btn btn-light btn-speed"  data-bs-target="#areaModal" onclick="getAmount()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset" onclick="getRes() ">Reset</button>
+                  <div class="amount-answer res"></div>
+                </form>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
