@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="container">
+        <h1 class="header-title">
+          Lesson-2
+        </h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="task-wrapper">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="task1-tab" data-bs-toggle="tab" data-bs-target="#task1-tab-pane" type="button" role="tab" aria-controls="task1-tab" aria-selected="true">Task - 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task2-tab" data-bs-toggle="tab" data-bs-target="#task2-tab-pane" type="button" role="tab" aria-controls="task2-tab" aria-selected="false">Task - 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task3-tab" data-bs-toggle="tab" data-bs-target="#task3-tab-pane" type="button" role="tab" aria-controls="task3-tab" aria-selected="false">Task - 3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task4-tab" data-bs-toggle="tab" data-bs-target="#task4-tab-pane" type="button" role="tab" aria-controls="task4-tab" aria-selected="false">Task - 4</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task5-tab" data-bs-toggle="tab" data-bs-target="#task5-tab-pane" type="button" role="tab" aria-controls="task5-tab" aria-selected="false">Task - 5</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="task1-tab-pane" role="tabpanel" aria-labelledby="task1-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Add any two tens numbers</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="number-one" placeholder="number one:">
+                    <label for="number-one">Number 1:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="number-two" placeholder="number two:">
+                    <label for="number-two">Number 2:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#nameModal" onclick="getSum()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="nameModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="number-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade show" id="task2-tab-pane" role="tabpanel" aria-labelledby="task2-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Add data</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="flash" placeholder="number one:">
+                    <label for="flash">Volume of the flash drive in GB:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="file" placeholder="number two:">
+                    <label for="file">File size in MB:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#nunstrModal" onclick="getCount()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="nunstrModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="count-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task3-tab-pane" role="tabpanel" aria-labelledby="task3-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">How many chocolates can you buy?</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="money" placeholder="number one:">
+                    <label for="money">Amount of money in the wallet:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="price" placeholder="number two:">
+                    <label for="price">Price of one chocolate bar:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#chocoModal" onclick="getChoco()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="chocoModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="choco-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task4-tab-pane" role="tabpanel" aria-labelledby="task4-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter a three-digit number</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="number" placeholder="number:">
+                    <label for="number">Number:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#areaModal" onclick="getReverse()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="areaModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="reverse-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task5-tab-pane" role="tabpanel" aria-labelledby="task5-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Calculate the amount of accrued interest</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="cash" placeholder="name:">
+                    <label for="cash">Your money:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="months" placeholder="name:">
+                    <label for="months">Months:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="rate" placeholder="name:">
+                    <label for="rate">interest rate:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#rateModal" onclick="getInterest()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="rateModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="rate-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
