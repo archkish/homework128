@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header>
+      <div class="container">
+        <h1 class="header-title">
+          Lesson-3
+        </h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="task-wrapper">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="task1-tab" data-bs-toggle="tab" data-bs-target="#task1-tab-pane" type="button" role="tab" aria-controls="task1-tab" aria-selected="true">Task - 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task2-tab" data-bs-toggle="tab" data-bs-target="#task2-tab-pane" type="button" role="tab" aria-controls="task2-tab" aria-selected="false">Task - 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task3-tab" data-bs-toggle="tab" data-bs-target="#task3-tab-pane" type="button" role="tab" aria-controls="task3-tab" aria-selected="false">Task - 3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task4-tab" data-bs-toggle="tab" data-bs-target="#task4-tab-pane" type="button" role="tab" aria-controls="task4-tab" aria-selected="false">Task - 4</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task5-tab" data-bs-toggle="tab" data-bs-target="#task5-tab-pane" type="button" role="tab" aria-controls="task5-tab" aria-selected="false">Task - 5</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task6-tab" data-bs-toggle="tab" data-bs-target="#task6-tab-pane" type="button" role="tab" aria-controls="task6-tab" aria-selected="false">Task - 6</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task7-tab" data-bs-toggle="tab" data-bs-target="#task7-tab-pane" type="button" role="tab" aria-controls="task7-tab" aria-selected="false">Task - 7</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task8-tab" data-bs-toggle="tab" data-bs-target="#task8-tab-pane" type="button" role="tab" aria-controls="task8-tab" aria-selected="false">Task - 8</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task9-tab" data-bs-toggle="tab" data-bs-target="#task9-tab-pane" type="button" role="tab" aria-controls="task9-tab" aria-selected="false">Task - 9</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="task10-tab" data-bs-toggle="tab" data-bs-target="#task10-tab-pane" type="button" role="tab" aria-controls="task10-tab" aria-selected="false">Task - 10</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="task1-tab-pane" role="tabpanel" aria-labelledby="task1-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter your age</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="age" placeholder="age:">
+                    <label for="age">Age:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#ageModal" onclick="getAge()">
+                    Get answer
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="ageModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="age-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="task2-tab-pane" role="tabpanel" aria-labelledby="task2-tab" tabindex="0">
+              <div class="title">Enter number from 0 to 9:</div>
+              <form class="form">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control input" id="number" placeholder="Number:" maxlength="1">
+                  <label for="number">Number:</label>
+                </div>
+                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#symbModal" onclick="getSymbol()">
+                  Get symbol
+                </button>
+                <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+              </form>
+              <div class="modal fade" id="symbModal" tabindex="-1"  aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <div class="symbol-answer"></div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task3-tab-pane" role="tabpanel" aria-labelledby="task3-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter two numbers</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="num1" placeholder="number one:">
+                    <label for="num1">Number 1:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="num2" placeholder="number two:">
+                    <label for="num2">Number 2:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#sumModal" onclick="getSum()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="sumModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="sum-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task4-tab-pane" role="tabpanel" aria-labelledby="task4-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter two numbers</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="number1" placeholder="number one:" minlength="2">
+                    <label for="number1">Number 1:</label>
+                  </div>
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="number2" placeholder="number two:" minlength="2">
+                    <label for="number2">Number 2:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#nodModal" onclick="getMaxNod()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="nodModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="nod-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task5-tab-pane" role="tabpanel" aria-labelledby="task5-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter number</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="number_one" placeholder="number one:">
+                    <label for="number1">Number 1:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#nodOneModal" onclick="getNod()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="nodOneModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="nod-one-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task6-tab-pane" role="tabpanel" aria-labelledby="task6-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter a five-digit number</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="fdNumber" placeholder="number one:" maxlength="5">
+                    <label for="fdNumber">Number 1:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#palModal" onclick="getPal()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="palModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="palindrome-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task7-tab-pane" role="tabpanel" aria-labelledby="task7-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter the purchase amount</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="amount" placeholder="amount:">
+                    <label for="amount">Amount:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#amountModal" onclick="getAmount()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="amountModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="amount-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task8-tab-pane" role="tabpanel" aria-labelledby="task8-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Enter 10 numbers through a space (ex: 1 2 -3...)</div>
+                <form class="form" action="#">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control input" id="numbers" placeholder="numbers:">
+                    <label for="numbers">Numbers:</label>
+                  </div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#numbersModal" onclick="getNumbers()">
+                    Calculate
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-reset btn-bottom">Reset</button>
+                </form>
+                <div class="modal fade" id="numbersModal" tabindex="-1"  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div class="stat-answer"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task9-tab-pane" role="tabpanel" aria-labelledby="task9-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Show days</div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#daysModal" onclick="showDay()">
+                    Start
+                  </button>               
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="task10-tab-pane" role="tabpanel" aria-labelledby="task10-tab" tabindex="0">
+              <div class="birth-wrapper">
+                <div class="title">Choose the number from 0 to 100</div>
+                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#daysModal" onclick="showNumber()">
+                    Start
+                  </button> 
+                  <div class="your-number-answer"></div>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
