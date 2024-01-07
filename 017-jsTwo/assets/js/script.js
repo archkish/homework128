@@ -61,9 +61,10 @@ function getChoco() {
   let price = +document.getElementById('price').value;
   let chocoAnswer = document.querySelector('.choco-answer');
 
-  let res = Math.floor(money / price)
+  let res = Math.floor(money / price);
+  let balance = (money % price).toFixed(2);
   
-  chocoAnswer.innerHTML = res == 1 ? `You can buy: ${res} chocolate` : `You can buy: ${res} chocolates`;
+  chocoAnswer.innerHTML = res == 1 ? `You can buy: ${res}, and your balance is ${balance}` : `You can buy: ${res} chocolates, and your balance is ${balance}`;
 }
 
 // 2.
