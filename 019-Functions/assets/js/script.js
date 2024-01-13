@@ -113,19 +113,23 @@ function getConcatAnswer() {
 // 6.
 
 function getArea(length, width) {
-  if(arguments.length == 1) {
-    return arguments[0] * arguments[0]
-  }
+
   if(length < 0 || width < 0) {
     return 'Enter only positive numbers'
   }
+
+  if(length === 0 && width !== 0) {
+    return width * width
+  }else if(length !== 0 && width === 0){
+    return length * length
+  }
+
   return length * width
 }
 
 function getAreaAnswer() {
   let length = +document.getElementById('length').value;
   let width = +document.getElementById('width').value;
-
   let areaAnswer = document.querySelector('.area-answer');
 
   areaAnswer.innerHTML = `Answer: ${getArea(length, width)}`
@@ -180,7 +184,4 @@ function getDiAnswer() {
 
   diAnswer.innerHTML = `Perfect numbers from the range: ${check(min, max)}`
 }
-
-
-
 
