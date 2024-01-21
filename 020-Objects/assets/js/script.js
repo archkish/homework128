@@ -98,7 +98,7 @@ function checkDriverName() {
   carAnsw.innerHTML = car.checkName(name);
 }
 
-function showTime() {
+function showCarTime() {
   let distance = +document.getElementById('distance').value;
   carAnsw.innerHTML = car.calculateTime(distance);
 }
