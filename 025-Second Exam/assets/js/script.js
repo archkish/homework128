@@ -282,19 +282,6 @@ function scrollToElem(selector) {
 
 // change header position
 
-// window.addEventListener('scroll', function() {
-//   const header = document.querySelector('.header');
-//   if(window.scrollY >= 60) {
-//     if(!header.classList.contains('scrolled')) {
-//       header.classList.add('scrolled')
-//     }
-//   } else {
-//     if(header.classList.contains('scrolled')) {
-//       header.classList.remove('scrolled')
-//     }
-//   }
-// })
-
 $(window).scroll(function() {
   const header = $('.header');
   if ($(window).scrollTop() >= 60) {
