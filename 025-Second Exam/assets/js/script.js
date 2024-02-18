@@ -28,9 +28,7 @@ $(document).ready(function() {
 // create articles
 
 async function getArticles() {
-  // const response = await fetch('../../data/news.json')
-  const response = await fetch('https://github.com/archkish/homework128/blob/main/025-Second%20Exam/data/news.json');
-
+  const response = await fetch('../../data/news.json')
   if(response.ok) {
     const json = await response.json();
     let res = '';
@@ -81,9 +79,21 @@ async function getArticles() {
       }]
     });
   } else {
-    toast.error('Server is not working now')
+    toast.error('Server is not working now');
+    checkForGit() 
+
   }
 
+}
+
+function checkForGit() {
+  const data = ('../../data/news.json')
+  const json = data.json();
+  let res = '';
+  json.forEach(item => {
+      res = articleHTML(item);
+      $('.sliderArticles').append(res);
+    })
 }
 
 function articleHTML (item) {
