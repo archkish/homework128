@@ -1,0 +1,25 @@
+.btn {
+  width: 190px;
+  font-family: 'Montserrat Regular';
+  text-align: center;
+  text-transform: uppercase;
+  border: 0.06rem solid rgb(44, 64, 88);
+  background-color: transparent;
+  padding: 16px 41px;
+  color: #000;
+  cursor: pointer;
+  &:hover {
+    background: rgb(44, 64, 88);
+    color: #FFF;
+  }
+}
+
+button.btn:focus {
+  outline: none;
+  background: rgb(44, 64, 88);
+  color: #fff;
+  transition: all ease .2s;
+}
+
+
+

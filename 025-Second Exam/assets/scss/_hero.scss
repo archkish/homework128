@@ -1,0 +1,118 @@
+.hero {
+  position: relative;
+  &__slide {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-family: 'Montserrat Bold';
+    font-size: 5rem;
+    color: #FFF;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__subtitle {
+    font-family: 'Montserrat Regular';
+    font-size: 1.13rem;
+    color: #FFF;
+    text-align: center;
+  }
+  &__first {
+    background: url('../img/slide1.jpg') center center / cover no-repeat;
+  }
+  &__second {
+    background: url('../img/slider2.jpg') center center/cover no-repeat;
+  }
+  &__third {
+    background: url('../img/slider3.jpg') center center/cover no-repeat;
+  }
+  &__fourth {
+    background: url('../img/slider4.jpg') center center/cover no-repeat;
+  }
+  &__fifth {
+    background: url('../img/slider5.jpg') center center/cover no-repeat;
+  }
+  &__scroll {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all ease 1s;
+    &:focus {
+      transition: 0s;
+      outline: 2px solid #f3f3f8;
+    }
+    &:hover {
+      border-color:  #3b3939;
+    }
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      display: block;
+      transform: rotate(-45deg);
+      transition: all ease 1s;
+      
+    }
+    &:hover::before {
+      border-color: #3b3939;
+    }
+  }
+  .lSPager.lSpg {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    right: 20px;
+    top: 50%;
+    transform:translateY(-50%);
+    li a {
+        width: 10px;
+        height: 10px;
+        border: 1px solid #fff;
+        background-color: transparent;
+        color:#FFF;
+        &:hover {
+          background-color: #FFF;
+        }
+        &:visited {
+          background-color: #fff;
+        }
+    }
+    li.active a{
+      background-color: #FFF; 
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 577px) {
+  .hero {
+    &__title {
+      font-size: 2rem;
+    }
+    &__subtitle {
+      width: 180px;
+      margin: 0 auto;
+      font-size: .7rem;
+    }
+    .lSPager.lSpg {
+      gap: 30px;
+    }
+  }
+}
