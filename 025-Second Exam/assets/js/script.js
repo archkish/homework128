@@ -26,7 +26,50 @@ $(document).ready(function() {
 
 
 // create articles
-
+function doSlider() {
+  $('.sliderArticles').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    arrows: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    
+    responsive: [{
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: true,
+        
+        
+      }
+    }, {
+      breakpoint: 970,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }, {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+      }
+    },  {
+      breakpoint: 621,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+      }
+    }]
+  });
+}
 async function getArticles() {
   const response = await fetch('../../data/news.json')
   if(response.ok) {
@@ -36,53 +79,71 @@ async function getArticles() {
       res = articleHTML(item);
       $('.sliderArticles').append(res);
     })  
-    $('.sliderArticles').slick({
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      adaptiveHeight: true,
-      arrows: true,
-      dots: true,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      
-      responsive: [{
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: true,
-          
-          
-        }
-      }, {
-        breakpoint: 970,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          arrows: false,
-        }
-      }, {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
-        }
-      },  {
-        breakpoint: 621,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-        }
-      }]
-    });
+    doSlider()
   } else {
-    toast.error('Server is not working now');
+    toast.error('Server is not working now')
+    checkForGit()
   }
+
 }
 
+function checkForGit() {
+  const data = [
+    {
+      title: "SEE THE UNMATCHED BEAUTY OF THE GREAT.",
+      anons: "Free directories: directories are perfect for customers that are searching for...",
+      image: "assets/img/news1.jpg",
+      date: "20 Jan 2020",
+      author: {
+        avatar: "assets/img/user1.jpg",
+        name: "ALJA BRUN"
+      }
+    }, {
+      title: "EFFECTIVE ADVERTISING POINTERS.",
+      anons: "Having a home based business is a wonderful asset to your life...",
+      image: "assets/img/news2.jpg",
+      date: "13 Dec 2019",
+      author: {
+        avatar: "assets/img/user2.jpg",
+        name: "DOMINIC FREEMAN"
+      }
+    }, {
+      title: "HYPNOTIZE YOURSELF INTO THE GHOST.",
+      anons: "There are many things that are important to catalog design...",
+      image: "assets/img/news3.jpg",
+      date: "30 Nov 2019",
+      author: {
+        avatar: "assets/img/user3.jpg",
+        name: "ALICE WARD"
+      }
+    }, {
+      title: "SEE THE UNMATCHED BEAUTY OF THE GREAT.",
+      anons: "Free directories: directories are perfect for customers that are searching for...",
+      image: "assets/img/news1.jpg",
+      date: "20 Jan 2020",
+      author: {
+        avatar: "assets/img/user1.jpg",
+        name: "ALJA BRUN"
+      }
+    },  {
+      title: "EFFECTIVE ADVERTISING POINTERS.",
+      anons: "Having a home based business is a wonderful asset to your life...",
+      image: "assets/img/news2.jpg",
+      date: "13 Dec 2019",
+      author: {
+        avatar: "assets/img/user2.jpg",
+        name: "DOMINIC FREEMAN"
+      }
+    }
+  ]
+  let res = '';
+  data.forEach(item => {
+      res = articleHTML(item);
+       $('.sliderArticles').append(res);
+    })
+  
+    doSlider()
+}
 
 
 function articleHTML (item) {
