@@ -80,21 +80,10 @@ async function getArticles() {
     });
   } else {
     toast.error('Server is not working now');
-    checkForGit() 
-
   }
-
 }
 
-function checkForGit() {
-  const data = ('../../data/news.json')
-  const json = data.json();
-  let res = '';
-  json.forEach(item => {
-      res = articleHTML(item);
-      $('.sliderArticles').append(res);
-    })
-}
+
 
 function articleHTML (item) {
   return `
