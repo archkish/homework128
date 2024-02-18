@@ -28,7 +28,9 @@ $(document).ready(function() {
 // create articles
 
 async function getArticles() {
-  const response = await fetch('../../data/news.json')
+  // const response = await fetch('../../data/news.json')
+  const response = await fetch('https://github.com/archkish/homework128/blob/main/025-Second%20Exam/data/news.json');
+
   if(response.ok) {
     const json = await response.json();
     let res = '';
