@@ -1,0 +1,146 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: sans-serif;
+  color: #232323;
+}
+ul, ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a, button {
+  transition: all .2s ease;
+}
+
+header {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   z-index: 10;
+}
+// розтяг по всій висоті, щоб притиснути footer до низу
+main {
+  flex-grow: 1; 
+}
+
+.container {
+  width: min(90%, 1400px);
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.header__wrapper {
+ padding: 6px 26px;
+ width: 100%;
+ background-color: rgba(217, 217, 217, 1);
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+
+}
+.header {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 19px;
+  &__logo {
+    width: 181px;
+    height: 37px;
+    background: rgba(241, 242, 174, 1);
+  }
+  ul {
+    display: flex;
+    gap: 19px;
+    li {
+      width: 46px;
+      height: 37px;
+      background: rgba(241, 242, 174, 1);
+    }
+
+  }
+}
+.container {
+  width: min(90%, 1177px);
+  margin-inline: auto;
+
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner {
+  position: relative;
+  height: 145px;
+  background-color: rgba(217, 217, 217, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.wrapper {
+  // width: 100%;
+  display: flex;
+  gap: 67px;
+}
+
+.blog__wrapper, .news__wrapper {
+  background-color: rgba(217, 217, 217, 1);
+  // height: 437px;
+  padding: 17px 25px;
+}
+.blog__wrapper {
+  // min-width: 810px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+  }
+}
+
+.news__wrapper {
+  // min-width: 300px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+  }
+}
+
+.blog__article {
+  width: 759px;
+  height: 70px;
+  background-color:rgba(249, 215, 215, 1);
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.news__article {
+  width: 247px;
+  height: 110px;
+  background-color: rgba(189, 205, 246, 1);
+}

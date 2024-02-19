@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.min.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+    
+      function MyApp() {
+        return <>
+                <Header logoText="Blog name"/>
+                <Main/>
+              </>;
+      }
+
+      function Header({logoText}) {
+        return <header className="header">
+                  <div className="container">
+                    <div className="header__wrapper">
+                      <div id="logo" className="header__logo">
+                      </div>
+                      <div>{logoText}</div>
+                      <nav>
+                        <ul>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                          <li><a href="#"></a></li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+              </header>
+      }
+
+      function Main () {
+        return <main>
+                  <Banner bannerText="Full-width banner image"/>
+                  <Wrapper/>
+                </main>
+      }
+
+      function Banner(props) {
+        return <div className="container">
+                <div className="banner">
+                  {props.bannerText}
+                </div>
+              </div>
+      }
+
+      function Wrapper() {
+        return <div className="container">
+                <div className="wrapper">
+                  <Blog/>
+                  <News/>
+                </div>
+              </div>
+      }
+
+      function Blog(props) {
+        const items = [1, 2, 3, 4]
+
+        const listItems = items.map((item, index) =>
+          <li key={index} className="blog__article"></li>
+        );
+
+        return <div className="blog__wrapper" id="blog">
+            <div className="text">Blog</div>
+            <ul>{listItems}</ul>
+          </div>
+      }
+
+      function News() {
+        const items = [1, 2, 3,]
+
+        const listItems = items.map((item, index) =>
+          <li key={index} className="news__article"></li>
+        );
+
+        return <div className="news__wrapper" id="news">
+            <div className="text">News</div>
+            <ul>{listItems}</ul>
+          </div>
+      }
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<MyApp />);
+
+    </script>
+  </body>
+</html>
