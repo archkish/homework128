@@ -1,0 +1,131 @@
+.faqs {
+  margin-bottom: 200px;
+  .accordion {
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    
+    &-content {
+      border-bottom: 0.0625rem solid $border-link-color;
+      border-top: 0.0625rem solid $border-link-color;
+      overflow: hidden;
+      .question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 40px;
+        min-height: 50px;
+        .title {
+          color: $descr-color;
+          font-family: "Manrope SemiBold";
+          font-size: 1.25rem;
+          text-transform: uppercase;
+        }
+      }
+      .answer {
+        padding: 0px 40px;
+        color: $subtitle-color;
+        font-family: "Manrope Regular";
+        font-size: 1.13rem;
+        height: 0;
+        opacity: 0;
+        transition: all .5s ease;
+
+      }
+
+    }
+  }
+  .answer.show {
+    height: 125px;
+    opacity: 1;
+    transition: all .5s ease;
+  }
+  .btn {
+    cursor: pointer;
+    border: 0.0625rem solid $border-link-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: all .5s ease;
+    &:hover {
+      border-color: $text-hover-color;
+      transition: all .5s ease;
+      span::before {
+          border-color: $text-hover-color;
+      }
+    }
+
+  }
+
+
+}
+
+.down {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-left: 0.0625rem solid $border-link-color;
+    border-bottom: 0.0625rem solid $border-link-color;
+    transform: rotate(-45deg);
+    transition: all .5s ease;
+  }
+}
+  .up {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:before {
+      content: '';
+      width: 12px;
+      height: 12px;
+      top: -2px;
+      position: absolute;
+      border-top: 0.0625rem solid $border-link-color;
+      border-left: 0.0625rem solid $border-link-color;
+      transform: rotate(45deg);
+      transition: all .5s ease;
+    }
+}
+
+@media screen and (max-width: 950px) {
+  .faqs {
+    .accordion {
+      &-content {
+        .question {
+          .title {
+            max-width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .faqs {
+    .accordion {
+      &-content {
+        .question {
+        
+        }
+        .answer {
+          padding: 0px 40px;
+        }
+      }
+    }
+
+  }
+}

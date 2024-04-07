@@ -1,0 +1,174 @@
+.reviews {
+  position: relative;
+  margin-bottom: 200px;
+  .bottom-links {
+    left: 0;
+  }
+
+  .tile{
+    position: relative;
+    min-height: 350px;
+    padding: 30px;
+    border: 0.06rem solid $border-color;
+    border-radius: 10px;
+    background-color: $bg-line-color;
+    overflow: hidden;
+    .left-bottom, .right-top {
+      
+      position: absolute;
+      width: 373.37px;
+      height: 373.37px;
+      border-radius: 1.38rem;
+      background: linear-gradient(206.57deg, rgb(24, 24, 27) 0%,rgba(24, 24, 27, 0) 83.333%);
+
+    }
+    .left-bottom {
+      left: 300px;
+      top: -170px;
+      transform: rotate(-144.54deg);
+    }
+    .right-top {
+      left: -240px;
+      top: 80px;
+      transform: rotate(-54deg);
+    }
+    &-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    &-name {
+      color: $hero-name-color;
+      font-family: "Manrope Medium";
+      font-size: 1.25rem;
+    }
+    &-location {
+      color: $hero-subtitle-color;
+      font-family: "Manrope Regular";
+      font-size: 1.13rem;
+    }
+    &-rate {
+      margin-bottom: 24px;
+      ul {
+        display: flex;
+        gap: 4px;
+        list-style-type: none;
+      }
+      li {
+        z-index: 99;
+        width: 20px;
+        height: 20px;
+        background: url('../images/rate-star.svg') center center/ contain no-repeat;
+      }
+    }
+    .user-descr {
+      position: relative;
+      color: $hero-name-color;
+      font-family: "Manrope Regular";
+      z-index: 200;
+      font-size: 1.25rem;
+    }
+  }
+}
+
+.rev-top-btn {
+  border: 0.06rem solid $border-color;
+  border-radius: 6.25rem;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  button {
+    cursor: pointer;
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background-color: $border-color;
+    border: none;
+    &:hover {
+      background-color: $btn-hover-color;
+      color: $text-color;
+    }
+    
+    .left{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      &:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        top: -4px;
+        border-left: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+        transform: rotate(45deg);
+        transition: all .5s ease;
+      }
+    }
+    .right {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      &:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        top: -4px;
+        position: absolute;
+        border-top: 3px solid #fff;
+        border-left: 3px solid #fff;
+        transform: rotate(135deg);
+        transition: all .5s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .reviews {
+    .slides-wrapp {
+      top: 105%;
+    }
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .reviews {
+    .tile{
+      padding: 20px;
+      &-name {
+        font-size: 1rem;
+      }
+      &-location {
+        font-size: 0.88rem;
+      }
+      .user-descr {
+        font-size: 1rem;
+      }
+    }
+    .bottom{
+      &-links {
+        padding: 8px;
+        ul {
+          gap: 5px;
+          li {
+            a {
+              width: 32px;
+              height: 32px;
+              padding: 8px;
+          }
+          }
+        }
+      }
+    
+    }
+  }
+}

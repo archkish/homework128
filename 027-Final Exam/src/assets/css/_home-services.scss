@@ -1,0 +1,96 @@
+.home__services {
+  .top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .text {
+    color: $subtitle-color;
+  }
+  .top-btn {
+    button {
+      width: 210px;
+    }
+  }
+  .services {
+    margin-bottom: 200px;
+    display: flex;
+    gap: 50px;
+    &-descr {
+      max-width: 773px;
+      color: $subtitle-color;
+      font-family: "Manrope Regular";
+      font-size: 1.13rem;
+      margin-bottom: 50px;
+    }
+    &-list {
+      .list-title {
+        color: $about-title-color;
+        font-family: "Manrope Medium";
+        font-size: 1.13rem;
+        margin-bottom: 30px;
+      }
+      ul{
+        list-style-type: none;
+        color: $descr-color;
+        font-family: "Manrope Regular";
+        font-size: 1.13rem;
+        text-transform: uppercase;
+      }
+      li {
+        border: 1px solid $border-color;
+        border-radius: 0.75rem;
+        padding: 24px 20px 24px 60px;
+        margin-bottom: 10px;
+        position: relative;
+        &:last-child {
+          margin-bottom: 0;
+        }
+        span::before {
+          content: "";
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: 10px;
+          top: 16px;
+          background: url('../images/gray-star.svg') center center/ contain no-repeat;
+        }
+      }
+    }
+    &-img {
+      border-radius: 20px 20px 20px 100px;
+      overflow: hidden;
+      max-width: 773px;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 1050px) {
+  .home__services {
+    .services {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .top-info {
+    flex-direction: column;
+    .info-name {
+      font-size: 2rem;
+    
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .top-info {
+    .info-name {
+      font-size: 2rem;
+    
+    }
+  }
+
+}

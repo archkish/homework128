@@ -1,0 +1,160 @@
+
+.portfolio__hero {
+  padding-top: 100px;
+  position: relative;
+  .about-info {
+    padding-top: 40px;
+  }
+  .hero-bg {
+      margin-bottom: 100px;
+      flex: 1;
+      min-height: 784px;
+      clip-path: polygon( 100% 4.847%,100% 4.847%,99.969% 4.061%,99.879% 3.315%,99.734% 2.619%,99.541% 1.984%,99.303% 1.42%,99.025% 0.935%,98.713% 0.541%,98.372% 0.247%,98.005% 0.063%,97.619% 0%,74.331% 0%,74.331% 0%,73.945% 0.063%,73.578% 0.247%,73.237% 0.541%,72.925% 0.935%,72.647% 1.42%,72.409% 1.984%,72.216% 2.619%,72.071% 3.315%,71.981% 4.061%,71.95% 4.847%,71.95% 36.99%,71.95% 36.99%,71.919% 37.776%,71.828% 38.522%,71.684% 39.217%,71.49% 39.852%,71.252% 40.417%,70.975% 40.902%,70.663% 41.296%,70.321% 41.59%,69.955% 41.773%,69.569% 41.837%,2.381% 41.837%,2.381% 41.837%,1.995% 41.9%,1.628% 42.084%,1.287% 42.378%,0.975% 42.772%,0.697% 43.256%,0.459% 43.821%,0.266% 44.456%,0.121% 45.152%,0.031% 45.897%,0% 46.684%,0% 73.597%,0% 73.597%,0.028% 74.3%,0.109% 74.968%,0.238% 75.59%,0.411% 76.158%,0.624% 76.663%,0.872% 77.097%,1.151% 77.45%,1.457% 77.713%,1.785% 77.877%,2.13% 77.934%,9.757% 77.934%,9.757% 77.934%,10.102% 77.99%,10.43% 78.155%,10.736% 78.418%,11.015% 78.77%,11.263% 79.204%,11.476% 79.709%,11.649% 80.277%,11.778% 80.9%,11.859% 81.567%,11.887% 82.27%,11.887% 95.663%,11.887% 95.663%,11.915% 96.367%,11.996% 97.034%,12.125% 97.656%,12.298% 98.225%,12.511% 98.73%,12.759% 99.163%,13.038% 99.516%,13.344% 99.779%,13.672% 99.943%,14.017% 100%,77.995% 100%,77.995% 100%,78.341% 99.943%,78.668% 99.779%,78.974% 99.516%,79.253% 99.163%,79.501% 98.73%,79.714% 98.225%,79.888% 97.656%,80.017% 97.034%,80.097% 96.367%,80.125% 95.663%,80.125% 81.633%,80.125% 81.633%,80.153% 80.929%,80.234% 80.262%,80.363% 79.64%,80.536% 79.071%,80.749% 78.566%,80.997% 78.133%,81.277% 77.78%,81.582% 77.517%,81.91% 77.353%,82.256% 77.296%,97.87% 77.296%,97.87% 77.296%,98.215% 77.239%,98.543% 77.075%,98.849% 76.812%,99.128% 76.459%,99.376% 76.026%,99.589% 75.52%,99.762% 74.952%,99.891% 74.33%,99.972% 73.663%,100% 72.959%,100% 41.837%,100% 4.847% );
+      background: url('../images/ph-bg.jpg') center bottom / cover no-repeat;
+  }
+}
+.about-info {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  font-family: "Manrope SemiBold";
+  text-transform: uppercase;
+    .info-subtitle {
+      color: $subtitle-color;
+      font-size: 1.25rem;
+      margin-bottom: 4px;
+    }
+    .info-name {
+      color: rgb(255, 255, 255);
+      font-size: 3.63rem;
+      margin-bottom: 31px;
+    }
+}
+.portfolio-descr {
+  width: 70%;
+  color: $subtitle-color;
+  font-family: "Manrope Regular";
+  font-size: 1.13rem;
+}
+.about__icon {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+.about__text {
+  line-height: 1.56rem;
+  width: 205px;
+  position: absolute;
+  right: 40px;
+  bottom: 70px;
+  color: $subtitle-color;
+  font-family: "Manrope Medium";
+  font-size: 1.13rem;
+  text-transform: uppercase;
+}
+.brands__title {
+  color: $subtitle-color;
+  font-family: "Manrope Medium";
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.p-line {
+  margin-bottom: 150px;
+}
+
+.slider-container {
+  margin-bottom: 200px;
+}
+
+.galery__title {
+  color: $subtitle-color;
+  font-family: "Manrope SemiBold";
+  font-size: 2.75rem;
+  margin-bottom: 61px;
+  text-transform: uppercase;
+}
+
+
+@media screen and (max-width: 1540px) {
+  .about__icon {
+    bottom: 10px;
+    left: 0px;
+  }
+  .portfolio-descr { 
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1404px) {
+  .about__icon {
+    width: 100px;
+    bottom: 30px;
+    left: 0px;
+  }
+  .about__text {
+    padding: 5px 10px;
+    background-color: rgba(255,255,255,.2);
+    border-radius: 8px;
+    transition: all ease .5s;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .about-info {
+      .info-name {
+        font-size: 3rem;
+        transition: .5s ease;
+      }
+  }
+  .about__icon {
+    display: none;
+  }
+  .portfolio-descr {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 887px) {
+  .portfolio__hero {
+    padding-top: 0;
+    .hero-bg {
+      order: 1;
+      clip-path: none;
+      border-radius: 20px;  
+      background-position: top center;
+      min-height: 357px;
+      margin-bottom: 0;
+    }
+    .about-info {
+      position: relative;
+      top: 0;
+      order: 2;
+      padding-bottom: 40px;
+      .info-name {
+        font-size: 2rem;
+      }
+    }
+    .portfolio-descr {
+      width: 100%;
+    }
+  }
+  .about__text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 887px) {
+  .portfolio__hero {
+    .about-info {
+      .info-name {
+        font-size: 1.6rem;
+      }
+    }
+    .portfolio-descr {
+      max-width: 100%;
+      font-size: 1rem;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.home__portfolio {
+  position: relative;
+  margin-bottom: 200px;
+  .top-btn {
+    button {
+      width: 190px;
+    }
+  }
+
+}
+.btn-wrapp {
+  opacity: 0;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.slick-list { 
+  margin: 0 -7px; 
+  & .slick-slide > div { 
+    padding: 0 25px; 
+} }
+
+.card {
+  &-img {
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 19px;
+    img {
+      object-fit: contain;
+    }
+    &:hover {
+      opacity: .7;
+    }
+    
+  }
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+  }
+  &-title {
+    color: $about-title-color;
+    font-family: "Manrope Medium";
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+  }
+  &-date {
+    color: $subtitle-color;
+    font-family: Manrope;
+    font-size: 1.13rem;
+  }
+  &-link {
+    transition: all .5s ease;
+    cursor: pointer;
+    svg path{
+      transition: all .5s ease;
+    }
+    button {
+      cursor: pointer;
+      color: $link-color;
+      font-family: "Manrope Medium";
+      font-size: 1.13rem;
+      background-color: transparent;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      border-bottom: 0.0625rem solid $border-link-color;
+    }
+    svg {
+      display: inline-block;
+      position: relative;
+      top: 5px;
+    }
+    span {
+      margin-right: 10px;
+    }
+    &:hover {
+      button {
+        color: $subtitle-color;
+        border-color: $hero-name-color;
+      }
+      svg path {
+        fill: $subtitle-color;
+      }
+    }
+  }
+
+}
+
+
+// @media screen and (max-width: 1440px) {
+//   .slider {
+//     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+//     justify-items: center;
+//   }
+// }
+
+@media screen and (max-width: 1440px) {
+  .card {
+    &-body {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card {
+    &-body {
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .home__portfolio {
+    .about-top {
+      margin-bottom: 50px;
+      padding-bottom: 20px;
+    }
+  }
+}

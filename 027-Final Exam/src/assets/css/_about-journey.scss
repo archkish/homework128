@@ -1,0 +1,62 @@
+.about__journey {
+  
+  padding-bottom: 200px;
+  .journey__tiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .journey-tile {
+    width: 48%;
+    border: 1px solid $border-color;
+    border-radius: 12px;
+    color: #fff;
+    position: relative;
+    padding: 50px;
+    z-index: -2;
+    background-color: $bg-line-color;
+    overflow: hidden;
+    color: $subtitle-color;
+  }
+  .left-bottom, .right-top {
+    position: absolute;
+    width: 373.37px;
+    height: 373.37px;
+    border-radius: 1.38rem;
+    z-index: -1;
+    background: linear-gradient(206.57deg, rgb(24, 24, 27) 0%,rgba(24, 24, 27, 0) 83.333%);
+  }
+  .left-bottom {
+    right: -120px;
+    top: -170px;
+    transform: rotate(-144.54deg);
+  }
+  .right-top {
+    left: -150px;
+    top: 110px;
+    transform: rotate(-54deg);
+  }
+  .tile-name {
+    font-family: "Manrope SemiBold";
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .tile-descr {
+    font-family: "Manrope Regular";
+    font-size: 1.13rem;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  .about__journey {
+    .journey-tile {
+      width: 100%;
+      padding: 30px;
+    }
+    .tile-name {
+      font-size: 2rem;
+    }
+  }
+}

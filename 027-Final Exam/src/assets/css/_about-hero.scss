@@ -1,0 +1,270 @@
+@import "blocks/work-together.scss";
+
+.about__hero {
+  padding-top: 100px;
+  position: relative;
+  margin-bottom: 150px;
+  .h-wrapp {
+    position: relative;
+  }
+  .hero_bg {
+    margin-bottom: 100px;
+    flex: 1;
+    min-height: 784px;
+    clip-path: polygon( 97.615% 0%,97.615% 0%,98.001% 0.063%,98.368% 0.247%,98.711% 0.541%,99.023% 0.935%,99.301% 1.42%,99.54% 1.984%,99.734% 2.619%,99.878% 3.315%,99.969% 4.061%,100% 4.847%,100% 10.587%,100% 10.587%,99.972% 11.29%,99.891% 11.957%,99.762% 12.58%,99.588% 13.148%,99.375% 13.653%,99.126% 14.087%,98.847% 14.439%,98.54% 14.702%,98.212% 14.867%,97.866% 14.923%,43.488% 14.923%,43.488% 14.923%,43.141% 14.867%,42.813% 14.702%,42.507% 14.439%,42.227% 14.087%,41.978% 13.653%,41.765% 13.148%,41.592% 12.58%,41.462% 11.957%,41.381% 11.29%,41.353% 10.587%,41.353% 4.847%,41.353% 4.847%,41.385% 4.061%,41.475% 3.315%,41.62% 2.619%,41.814% 1.984%,42.052% 1.42%,42.33% 0.935%,42.642% 0.541%,42.985% 0.247%,43.352% 0.063%,43.739% 0%,97.615% 0%,43.377% 39.541%,43.377% 39.541%,43.043% 39.602%,42.721% 39.772%,42.411% 40.037%,42.111% 40.377%,41.82% 40.778%,41.536% 41.222%,41.258% 41.691%,40.984% 42.17%,40.714% 42.642%,40.447% 43.089%,40.447% 43.089%,40.322% 43.277%,40.19% 43.449%,40.054% 43.603%,39.911% 43.739%,39.764% 43.856%,39.613% 43.954%,39.457% 44.031%,39.297% 44.087%,39.134% 44.121%,38.968% 44.133%,2.385% 44.133%,2.385% 44.133%,1.999% 44.196%,1.631% 44.38%,1.289% 44.674%,0.977% 45.068%,0.699% 45.552%,0.46% 46.117%,0.266% 46.752%,0.122% 47.448%,0.031% 48.193%,0% 48.98%,0% 73.597%,0% 73.597%,0.028% 74.3%,0.109% 74.968%,0.238% 75.59%,0.412% 76.158%,0.625% 76.663%,0.874% 77.097%,1.153% 77.45%,1.46% 77.713%,1.788% 77.877%,2.134% 77.934%,9.753% 77.934%,9.753% 77.934%,10.099% 77.99%,10.427% 78.155%,10.733% 78.418%,11.013% 78.77%,11.262% 79.204%,11.475% 79.709%,11.649% 80.277%,11.778% 80.9%,11.859% 81.567%,11.887% 82.27%,11.887% 95.663%,11.887% 95.663%,11.915% 96.367%,11.996% 97.034%,12.125% 97.656%,12.299% 98.225%,12.512% 98.73%,12.761% 99.163%,13.04% 99.516%,13.347% 99.779%,13.675% 99.943%,14.021% 100%,77.991% 100%,77.991% 100%,78.337% 99.943%,78.666% 99.779%,78.972% 99.516%,79.252% 99.163%,79.5% 98.73%,79.714% 98.225%,79.887% 97.656%,80.017% 97.034%,80.098% 96.367%,80.126% 95.663%,80.126% 81.633%,80.126% 81.633%,80.153% 80.929%,80.234% 80.262%,80.364% 79.64%,80.537% 79.071%,80.751% 78.566%,80.999% 78.133%,81.279% 77.78%,81.585% 77.517%,81.914% 77.353%,82.26% 77.296%,97.866% 77.296%,97.866% 77.296%,98.212% 77.239%,98.54% 77.075%,98.847% 76.812%,99.126% 76.459%,99.375% 76.026%,99.588% 75.52%,99.762% 74.952%,99.891% 74.33%,99.972% 73.663%,100% 72.959%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 44.133%,100% 43.878%,100% 43.878%,99.972% 43.174%,99.891% 42.507%,99.762% 41.885%,99.588% 41.316%,99.375% 40.811%,99.126% 40.378%,98.847% 40.025%,98.54% 39.762%,98.212% 39.598%,97.866% 39.541%,43.377% 39.541% );
+    background: url('../images/bg-man.jpg') bottom center/ cover no-repeat;
+  }
+  .about-info {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    font-family: "Manrope SemiBold";
+    text-transform: uppercase;
+      .info-subtitle {
+        color: $subtitle-color;
+        font-size: 1.25rem;
+        margin-bottom: 4px;
+      }
+      .info-name {
+        color: rgb(255, 255, 255);
+        font-size: 3.63rem;
+      }
+  }
+  .about__numbers {
+    display: flex;
+    position: absolute;
+    top: 245px;
+    left: 0;
+    .counter-wrapp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .count-item {
+      max-height: 141px;
+      padding: 24px 30px;
+      border: 0.06rem solid $border-color;
+      border-radius: 0.75rem;
+      background-color: $bg-line-color;;
+    }
+    .count {
+      color: rgb(255, 255, 255);
+      font-family: "Manrope SemiBold";
+      font-size: 3rem;
+    }
+    .subtitle {
+      color: $subtitle-color;
+      font-family: "Manrope Regular";
+      font-size: 1.13rem;
+      margin-bottom: 0;
+    }
+  }
+  .about__icon {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+  }
+  .about__text {
+    line-height: 1.56rem;
+    max-width: 205px;
+    position: absolute;
+    right: 40px;
+    bottom: 60px;
+    color: $subtitle-color;
+    font-family: "Manrope Medium";
+    font-size: 1.13rem;
+    text-transform: uppercase;
+  }
+  .about__biography {
+    padding: 80px 0;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+  .biography-title {
+    color: $subtitle-color;
+    font-family: "Manrope SemiBold";
+    font-size: 2.75rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  .biography-descr {
+    color: $subtitle-color;
+    font-family: "Manrope Regular";
+    font-size: 1.25rem;
+    line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 1764px) {
+  .about__hero {
+    .about__numbers {
+      position: absolute;
+      top: 245px;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1710px) {
+  .about__hero {
+    .about-info {
+        .info-name {
+          font-size: 3rem;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 1508px) {
+  .about__hero {
+    .about__icon {
+      bottom: 15px;
+      left: 10px;
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .about__hero {
+    .about__numbers {
+      top: 250px;
+      .count {
+        font-size: 2.13rem;
+      }
+      .subtitle {
+        font-size: 0.88rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1404px) {
+  .about__hero {
+    .about__icon {
+      width: 100px;
+      height: 100px;
+      bottom: 40px;
+      left: 20px;
+    }
+    .about__text {
+      right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1388px) {
+  .about__hero {
+    .about-info {
+      .info-name {
+        font-size: 3rem;
+        background-color: rgba(255,255,255,.2);
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: .5s ease;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .about__hero {
+    .about__icon {
+      display: none;
+    }
+    .about__text {
+      padding: 5px 10px;
+      background-color: rgba(255,255,255,.2);
+      border-radius: 8px;
+      transition: all ease .5s;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 1167px) {
+  .about__hero {
+    .about__numbers {
+      top: 260px;
+    }
+  }
+}
+@media screen and (max-width: 1151px) {
+  .about__hero {
+    .hero_bg {
+      order: 1;
+      clip-path: none;
+      border-radius: 20px;  
+      background-position: center bottom;
+      min-height: 357px;
+      margin-bottom: 0;
+    }
+    .about__numbers {
+      padding-top: 0;
+      position: relative;
+      top: 24px;
+      order: 3;
+      .counter-wrapp {
+        .count-item {
+          padding: 20px;
+
+        }
+      }
+      .count {
+        font-size: 1.5rem;
+      }
+      .subtitle {
+        font-size: 0.7rem;
+      }
+    }
+    .about-info {
+      position: relative;
+      top: 30px;
+      order: 2;
+      .info-name {
+        font-size: 1.8rem;
+        background: none;
+      }
+    }
+  }
+  .about__icon {
+    display: none;
+  }
+  .about__text {
+    display: none;
+  }
+  .about__biography {
+    position: relative;
+    top: 60px;
+    order: 4;
+    .biography-title {
+      font-size: 2rem;
+    }
+  }
+  .biography-descr {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 942px) {
+  .about__hero {
+    .about__numbers {
+      justify-content: center;
+      .counter-wrapp {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 467px) {
+  .about__hero {
+    .about__numbers {
+      .counter-wrapp {
+        grid-template-columns: repeat(2, 1fr);  
+      }
+    }
+  }
+}

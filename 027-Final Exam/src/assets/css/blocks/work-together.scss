@@ -1,0 +1,62 @@
+@import "../variables";
+
+.general {
+  padding-top: 100px;
+}
+.subtitle {
+  font-family: 'Manrope SemiBold';
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: $subtitle-color;
+  margin-bottom: 60px;
+}
+.block {
+  .top {
+    display: flex;
+    &__btn {
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 6.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $button-bg-color;
+        // width: 130px;
+        // height: 66px;
+        padding: 18px 50px;
+        margin-left: 10px;
+        svg path{
+          transition: all .5s ease;
+        }
+      }
+      &:hover button{
+        background-color: $button-bg-hover-color;
+        svg path {
+          fill: $bg-color;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .block {
+    .text {
+      font-size: 1.75rem;
+    }
+    .top {
+      &__btn {
+        button {
+          width: 5rem;
+          height: 3rem;
+          padding: 14px 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+}
