@@ -1,0 +1,167 @@
+.header {
+  background-color: #F8F1EA;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  &__logo {
+    padding: 22px 0;
+    max-width: 182px;
+  }
+  &__nav {
+    ul {
+      display: flex;
+      li {
+        padding: 28px 15px;
+        cursor: pointer;
+        transition: all ease .2s;
+        &:hover {
+          background-color: #F16A50;
+          a {
+            color: #fff;
+          }
+        }
+        a {
+          font-size: 1.25rem;
+          text-decoration: none;
+          color: #000;
+        }
+      }
+
+    }
+  }
+  &__form {
+    padding: 22px 0;
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    &-search {
+      height: 36px;
+    }
+    &-user {
+      height: 36px;
+    }
+    button {
+      width: 36px;
+      height: 36px;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+    .btn-search {
+      width: 36px;
+      svg path {
+        transition: all ease .2s;
+      }
+      &:hover {
+        svg path {
+          fill: #F16A50;
+        }
+      }
+    }
+    .btn-user {
+      svg path {
+        transition: all ease .2s;
+        stroke: #000;
+      }
+      &:hover {
+        svg path {
+          stroke: #F16A50;
+        }
+      }
+    }
+  }
+
+  .items__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: min(90%, 738px);
+  }
+  .header {
+    &__wrapper {
+      gap: 72px;
+    }
+    &__logo {
+      padding: 14px 0;
+    }
+    &__form {
+      padding: 16px 0px;
+      gap: 20px;
+      &-search, &-user {
+        height: 27px;
+        width: 27px;
+      }
+    }
+    &__nav {
+      height: 60px;
+      ul {
+        li {
+          line-height: 20px;
+          padding: 19px 15px;
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    .btn-search, .btn-user {
+      height: 27px;
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .header {
+    &__nav {
+      display: none;
+    }
+    .hamburger-wrapper {
+      display: block;
+    }
+
+    &__form {
+      &-search, &-user {
+        height: 27px;
+        width: 27px;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 321px) {
+  .container {
+    width: min(90%, 300px);
+  }
+  .header {
+    &__logo {
+      min-width: 100px;
+    }
+    &__form {
+      gap: 15px;
+      &-search, &-user {
+        height: 20px;
+        width: 20px;
+      }
+    }
+    .items__wrap {
+      justify-content: center;
+      gap: 38px;
+    }
+    .btn-search, .btn-user {
+      height: 20px;
+    }
+  }
+}

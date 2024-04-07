@@ -1,0 +1,99 @@
+.hero {
+  &__first {
+    background: url('../img/bg1.jpg') center center / cover no-repeat;
+  }
+  &__second {
+    background: url('../img/bg2.jpg') center center/cover no-repeat;
+  }
+  &__third {
+    background: url('../img/bg3.jpg') center center/cover no-repeat;
+  }
+  &__info {
+    text-align: center;
+  }
+  &__slide {
+    display: flex;
+    justify-content: end;
+    padding: 120px 100px 368px;
+    height: calc(100vh - 80px);
+  }
+  &__title {
+    max-width: 400px;
+    font-family: 'Montserrat Bold';
+    font-size: 3.13rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 50px;
+  }
+
+  .lSPager.lSpg {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    bottom: 70px;
+    li a {
+      width: 20px;
+      height: 20px;
+      background-color: rgba(248, 241, 234, 0.7);
+      &:hover {
+        background-color: #F16A50;
+      }
+    }
+    li.active a{
+      background-color: #F16A50;
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .hero {
+    &__info {
+      text-align: center;
+    }
+    &__slide {
+      padding: 60px 82px 200px;
+      height: calc(100vh - 60px);
+    }
+    &__title {
+      max-width: 210px;
+      font-size: 1.63rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      width: 154px;
+      padding: 10px 20px;
+    }
+    .lSPager.lSpg {
+      bottom: 40px;
+      gap: 12px;
+      li a {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 321px) {
+  .hero {
+    &__first, &__second, &__third{
+      background-position: -100px 0px;
+      background-size: cover;
+    }
+    &__slide {
+      padding: 60px 11px 203px;
+      height: 384px;
+    }
+    &__title {
+      max-width: 210px;
+      font-size: 1.63rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      width: 154px;
+      padding: 10px 20px;
+    }
+  }
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/lightslider.min.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+  <div class="overlay" id="overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <div class="mobile-menu__logo">
+        <a href="#"><img src="assets/icons/logo-min.png" alt="logo"></a>
+      </div>
+      <div class="hamburger-wrap">
+        <button id="hamburger_mobile" class="hamburger hamburger--slider-r is-active" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <nav>
+        <ul class="mobile_header_links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Catalog</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+    </nav>
+  </div>
+  <div class="page-wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="#">
+              <img src="assets/icons/logo-min.png" alt="logo">
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#arrivals">Catalog</a>
+              </li>
+              <li>
+                <a href="#partners">News</a>
+              </li>
+              <li>
+                <a href="#footer">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="items__wrap">
+            <div class="header__form">
+              <div class="header__form-search">
+                <button class="btn-search">
+                  <svg width="36.000000" height="36.000000" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path id="search-icon" d="M36 34.1172L25.944 24.0612C28.3605 21.1601 29.5656 17.439 29.3084 13.6721C29.0513 9.90518 27.3518 6.38242 24.5635 3.83661C21.7751 1.29083 18.1127 -0.0819702 14.338 0.00378418C10.5632 0.0895386 6.96692 1.62732 4.29712 4.29712C1.62732 6.96692 0.0895386 10.5633 0.00378418 14.338C-0.0819702 18.1127 1.29083 21.7751 3.83661 24.5635C6.38239 27.3518 9.90521 29.0513 13.6721 29.3084C17.439 29.5656 21.1601 28.3605 24.0612 25.944L34.1172 36L36 34.1172ZM2.71075 14.6949C2.71075 12.3246 3.41364 10.0076 4.73047 8.03687C6.0473 6.06607 7.91895 4.53003 10.1088 3.62299C12.2986 2.71594 14.7082 2.47861 17.0329 2.94104C19.3575 3.40344 21.4929 4.54483 23.1689 6.22083C24.845 7.89685 25.9863 10.0322 26.4487 12.3569C26.9111 14.6816 26.6738 17.0912 25.7668 19.281C24.8597 21.4708 23.3237 23.3425 21.3529 24.6593C19.3821 25.9762 17.0651 26.679 14.6949 26.679C11.5176 26.6755 8.47144 25.4117 6.22473 23.165C3.97803 20.9184 2.71429 17.8722 2.71075 14.6949Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </svg>
+                </button>
+              </div>
+              <div class="header__form-user">
+                <button class="btn-user">
+                  <svg width="38.000000" height="38.000000" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path id="Vector" d="M1 19C1 28.9414 9.05859 37 19 37C28.9414 37 37 28.9414 37 19C37 9.05859 28.9414 1 19 1C9.05859 1 1 9.05859 1 19Z"  stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+                    <path id="Vector" d="M18.9991 24.9286C28.9609 24.9286 33 30 33 30L5 30C5 30 9.03723 24.9286 18.9991 24.9286ZM22.8413 17.1259C23.8604 16.1234 24.4328 14.7637 24.4328 13.3459C24.4328 11.928 23.8604 10.5683 22.8413 9.56577C21.8223 8.56323 20.4402 8 18.9991 8C17.558 8 16.1759 8.56323 15.1569 9.56577C14.1378 10.5683 13.5654 11.928 13.5654 13.3459C13.5654 14.7637 14.1378 16.1234 15.1569 17.1259C16.1759 18.1285 17.558 18.6917 18.9991 18.6917C20.4402 18.6917 21.8223 18.1285 22.8413 17.1259Z"  stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                
+              </div>
+            </div>
+            <div class="hamburger-wrapper">
+              <button id="hamburger_main" class="hamburger hamburger--slider-r" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="hero">
+        <ul id="lightSlider">
+          <li class="hero__first hero__slide">
+            <div class="hero__info">
+              <div class="hero__title">Find your own style</div>
+              <button class="btn hero__btn">View more</button>
+            </div>
+          </li>
+          <li class="hero__second hero__slide">
+            <div class="hero__info">
+              <div class="hero__title">expand your horizons</div>
+              <button class="btn hero__btn">View more</button>
+            </div>
+          </li>
+          <li class="hero__third hero__slide">
+            <div class="hero__info">
+              <div class="hero__title">discover new options</div>
+              <button class="btn hero__btn">View more</button>
+            </div>
+        </li>
+        </ul>
+      </div>
+      <div class="arrivals" id="arrivals">
+        <div class="container">
+          <div class="arrivals__wrapper">
+            <div class="title">new arrivals</div>
+            <div  data-slick class="arrivals__slider" id="sl">
+              <div class="arrivals__wr">
+                <div class="slider__top">in stock</div>
+                <div class="slider__img">
+                  <img src="assets/img/g1-min.jpg" alt="gibson">
+                </div>
+                <div class="slider__info">
+                  <div class="slider__info-text">Suhr Standard Plus Trans Blue Denim</div>
+                  <div class="slider__info-price">€3.449,00</div>
+                </div>
+              </div>
+              <div class="arrivals__wr">
+                <div class="slider__top sold">sold</div>
+                <div class="slider__img">
+                  <img src="assets/img/g2-min.jpg" alt="gibson">
+                </div>
+                <div class="slider__info">
+                  <div class="slider__info-text">Gibson Les Paul Standard 60s</div>
+                  <div class="slider__info-price">€3.749,00</div>
+                </div>
+              </div>
+              <div class="arrivals__wr">
+                <div class="slider__top">in stock</div>
+                <div class="slider__img">
+                  <img src="assets/img/g3-min.jpg" alt="gibson">
+                </div>
+                <div class="slider__info">
+                  <div class="slider__info-text">Hagstrom Tremar Viking Deluxe Cloudy Seas</div>
+                  <div class="slider__info-price">€1.300,00</div>
+                </div>
+              </div>
+              <div class="arrivals__wr">
+                <div class="slider__top">in stock</div>
+                <div class="slider__img">
+                  <img src="assets/img/g4-min.jpg" alt="gibson">
+                </div>
+                <div class="slider__info">
+                  <div class="slider__info-text">Hagstrom Alvar Limited Edition</div>
+                  <div class="slider__info-price">€2.990,00</div>
+                </div>
+              </div>
+              <div class="arrivals__wr">
+                <div class="slider__top">in stock</div>
+                <div class="slider__img">
+                  <img src="assets/img/photo-min.jpg" alt="gibson">
+                </div>
+                <div class="slider__info">
+                  <div class="slider__info-text">Fender Telecaster Black Paisley Limited Edition</div>
+                  <div class="slider__info-price">€1.499,00</div>
+                </div>
+              </div>
+              <div class="arrivals__wr">
+                <div class="slider__top">in stock</div>
+                <div class="slider__img">
+                  <img src="assets/img/g3-min.jpg" alt="gibson">
+                </div>
+                <div class="slider__info">
+                  <div class="slider__info-text">Gibson Les Paul Standard 60s</div>
+                  <div class="slider__info-price">€3.749,00</div>
+                </div>
+              </div>
+            </div>
+            <div class="arrivals__btns">
+              <button class="arrivals__btn btn hero__btn">View more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="partners" id="partners">
+        <div class="container">
+          <div class="partners__wrapper">
+            <div class="title">our partners</div>
+            <div data-slick='{"slidesToShow": 9, "slidesToScroll": 1}' class="partners__slider">
+              <div class="slider__item">
+                <img src="assets/icons/engl-min.png" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="assets/icons/epiphone-min.png" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="assets/icons/esp-min.png" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="assets/icons/fender-min.png" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="assets/icons/gibson-min.png" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="assets/icons/marshal-min.png" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="assets/icons/orange-min.png" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="assets/icons/peavey-min.png" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="assets/icons/roland-min.png" alt="">
+              </div>
+              <div class="slider__item">
+                <img src="assets/icons/marshal-min.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__container">
+        <div class="footer__main">
+          <div class="footer__links">
+            <div class="footer__logo">
+              <a href="#"><img src="assets/icons/logo-white-min.png" alt="logo"></a>
+            </div>
+            <ul class="footer__nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Catalog</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="footer__contacts">
+            <div class="contacts__text">Contact Us</div>
+            <ul class="contacts__links">
+              <li><a href="#" class="fill">
+                <svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path id="instagram" d="M15 7.95923C13.6075 7.95923 12.2462 8.37207 11.0883 9.14575C9.93048 9.91943 9.02805 11.019 8.49515 12.3055C7.96222 13.5922 7.82281 15.0078 8.09448 16.3735C8.36615 17.7394 9.03671 18.9939 10.0214 19.9786C11.0061 20.9633 12.2606 21.6339 13.6264 21.9055C14.9922 22.1772 16.4079 22.0377 17.6944 21.5049C18.981 20.9719 20.0806 20.0696 20.8542 18.9116C21.6279 17.7538 22.0408 16.3926 22.0408 15C22.0408 13.1327 21.299 11.3418 19.9786 10.0214C18.6582 8.70093 16.8673 7.95923 15 7.95923ZM15 20.2041C13.9707 20.2041 12.9646 19.8989 12.1088 19.327C11.253 18.7552 10.5859 17.9424 10.192 16.9915C9.79816 16.0406 9.6951 14.9943 9.8959 13.9847C10.0967 12.9752 10.5923 12.048 11.3202 11.3202C12.048 10.5924 12.9753 10.0967 13.9847 9.89587C14.9942 9.69507 16.0406 9.79822 16.9915 10.192C17.9424 10.5859 18.7552 11.2529 19.327 12.1088C19.8989 12.9646 20.2041 13.9707 20.2041 15C20.2 16.3789 19.6505 17.7003 18.6754 18.6754C17.7003 19.6505 16.379 20.2001 15 20.2041ZM21.7347 0L8.26532 0C6.07321 0 3.97089 0.87085 2.42084 2.4209C0.870819 3.97095 0 6.07324 0 8.26526L0 21.7347C0 23.9268 0.870819 26.0291 2.42084 27.5791C3.97089 29.1292 6.07321 30 8.26532 30L21.7347 30C23.9268 30 26.0291 29.1292 27.5792 27.5791C29.1292 26.0291 30 23.9268 30 21.7347L30 8.26526C30 6.07324 29.1292 3.97095 27.5792 2.4209C26.0291 0.87085 23.9268 0 21.7347 0ZM28.1633 21.7347C28.1633 23.4397 27.486 25.0748 26.2804 26.2804C25.0748 27.486 23.4397 28.1632 21.7347 28.1632L8.26532 28.1632C6.56033 28.1632 4.9252 27.486 3.7196 26.2804C2.51404 25.0748 1.83673 23.4397 1.83673 21.7347L1.83673 8.26526C1.83673 6.5603 2.51404 4.92517 3.7196 3.7196C4.9252 2.51404 6.56033 1.83679 8.26532 1.83679L21.7347 1.83679C23.4397 1.83679 25.0748 2.51404 26.2804 3.7196C27.486 4.92517 28.1633 6.5603 28.1633 8.26526L28.1633 21.7347ZM24.4898 7.04077C24.4898 7.34351 24.4 7.63953 24.2318 7.89124C24.0637 8.14294 23.8246 8.33911 23.5449 8.45496C23.2652 8.5708 22.9575 8.60107 22.6606 8.54199C22.3637 8.48291 22.0909 8.33716 21.8769 8.12317C21.6628 7.90906 21.517 7.63635 21.458 7.33948C21.3989 7.04248 21.4292 6.73474 21.5451 6.45508C21.6609 6.17542 21.8571 5.9364 22.1088 5.76819C22.3605 5.59998 22.6565 5.51025 22.9592 5.51025C23.3651 5.51025 23.7545 5.67151 24.0415 5.9585C24.3286 6.24561 24.4898 6.63489 24.4898 7.04077Z" fill="#F8F1EA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </svg>
+              </a></li>
+              <li><a href="#" class="fill">
+                <svg width="15.000000" height="30.000000" viewBox="0 0 15 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+                  <path id="facebook" d="M3.82916 30L3.82916 15.9231L0 15.9231L0 10.8547L3.82916 10.8547L3.82916 6.52576C3.82916 3.1239 6.09106 0 11.3029 0C13.4131 0 14.9736 0.196655 14.9736 0.196655L14.8506 4.92969C14.8506 4.92969 13.2592 4.91455 11.5226 4.91455C9.64319 4.91455 9.34204 5.75647 9.34204 7.15393L9.34204 10.8547L15 10.8547L14.7538 15.9231L9.34204 15.9231L9.34204 30L3.82916 30Z" fill="#F8F1EA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </svg>
+              </a></li>
+              <li><a href="#" class="fill">
+                <svg width="23.000000" height="30.000000" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                      Created with Pixso.
+                  </desc>
+                  <defs/>
+                  <path id="pinterest" d="M12.2192 0C6.07318 0 0 4.11108 0 10.7648C0 14.9961 2.37195 17.4003 3.80951 17.4003C4.40277 17.4003 4.74396 15.7413 4.74396 15.2731C4.74396 14.7144 3.32458 13.5238 3.32458 11.1975C3.32458 6.36523 6.99036 2.93884 11.7343 2.93884C15.8132 2.93884 18.832 5.26501 18.832 9.5387C18.832 12.7305 17.5565 18.7168 13.423 18.7168C11.9318 18.7168 10.6552 17.6349 10.6552 16.0847C10.6552 13.8123 12.2365 11.6129 12.2365 9.26843C12.2365 5.29004 6.61182 6.01135 6.61182 10.8196C6.61182 11.8293 6.73737 12.9468 7.18683 13.8671C6.35974 17.4377 4.67108 22.7567 4.67108 26.4351C4.67108 27.5707 4.83307 28.6891 4.94043 29.8248C5.14362 30.0537 5.04199 30.0297 5.35345 29.9153C8.37238 25.7676 8.26501 24.9569 9.63068 19.5293C10.3677 20.9363 12.272 21.6931 13.7814 21.6931C20.1422 21.6931 23 15.472 23 9.86462C23 3.89661 17.8602 0.00195312 12.2183 0.00195312L12.2192 0Z" fill="#F8F1EA" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </svg>                
+              </a></li>
+              <li><a href="" class="stroke">
+                <svg width="37.999939" height="32.204834" viewBox="0 0 37.9999 32.2048" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                      Created with Pixso.
+                  </desc>
+                  <defs/>
+                  <path id="twitter" d="M31.8618 3.58374C30.8762 2.4259 29.5665 1.60535 28.1096 1.23291C26.6528 0.860474 25.1191 0.954102 23.7161 1.50134C22.313 2.04846 21.1083 3.02258 20.2648 4.29211C19.4213 5.56165 18.9798 7.06519 18.9999 8.59937L18.9999 10.2714C16.1243 10.3475 13.2748 9.69592 10.7052 8.37451C8.13568 7.0531 5.9259 5.10291 4.27264 2.69763C4.27264 2.69763 -2.27277 17.7448 12.4545 24.4323C9.08441 26.7695 5.06982 27.9415 0.999939 27.7761C15.7272 36.1356 33.7272 27.7761 33.7272 8.54932C33.7272 8.08447 33.6814 7.61963 33.5963 7.16162C35.2654 5.47961 36.9999 1.02576 36.9999 1.02576C36.9999 1.02576 33.6978 3.01868 31.8618 3.58374Z" stroke="#FFF" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+                </svg>                
+              </a></li>
+              <li><a href="#" class="stroke">
+                <svg width="42.000000" height="32.002441" viewBox="0 0 42 32.0024" fill="transparent" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path id="Vector" d="M38.8178 3.29089C38.1978 2.62549 37.4258 2.14661 36.579 1.90198C34.2651 0.942627 11.8472 0.472534 5.3432 1.92883C4.4964 2.17346 3.7243 2.65259 3.10425 3.31824C2.48419 3.98376 2.03796 4.8125 1.81024 5.72131C0.765259 10.6395 0.686218 21.2722 1.83624 26.301C2.06415 27.2097 2.51044 28.0382 3.13043 28.7035C3.75049 29.3689 4.52252 29.8479 5.3692 30.0924C9.95221 31.2246 31.7401 31.3834 36.605 30.0924C37.4518 29.8479 38.2238 29.3689 38.8438 28.7035C39.4639 28.0382 39.9102 27.2097 40.138 26.301C41.252 20.9427 41.331 10.969 40.112 5.69348C39.8842 4.78479 39.4379 3.9563 38.8178 3.29089Z" stroke="#F8F1EA" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+                  <path id="Vector" d="M17 10.0021L17 23.0021L27 16.5021L17 10.0021Z" stroke="#F8F1EA" stroke-opacity="1.000000" stroke-width="2.000000" stroke-linejoin="round"/>
+                </svg>
+                
+              </a></li>
+            </ul>
+            <div class="contacts__phone">
+              <a href="tel:+0800 300 4040">0800 300 4040</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">© Copyright 2022. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="assets/js/lightslider.min.js"></script>
+  <script>
+    function toggleMobileNav() {
+      document.body.classList.toggle('open-mobile-menu')
+      window.hamburger_main.classList.toggle('is-active')
+    }
+    window.hamburger_main.addEventListener('click', toggleMobileNav)
+    window.hamburger_mobile.addEventListener('click', toggleMobileNav)
+    window.overlay.addEventListener('click',toggleMobileNav)
+  </script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

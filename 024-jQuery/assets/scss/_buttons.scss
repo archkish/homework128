@@ -1,0 +1,24 @@
+.btn {
+  font-family: 'Montserrat Medium';
+  text-align: center;
+  text-transform: uppercase;
+  border: 0.13rem solid rgb(248, 241, 234);
+  background-color: transparent;
+  padding: 15px 57px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    border-color: #F16A50;
+    background: #F16A50;
+  }
+}
+.arrivals__btn {
+  border-color: #000;
+  color: #000;
+  &:hover {
+    color: #fff;
+    border-color: #F16A50;
+    background: #F16A50;
+  }
+}
+
