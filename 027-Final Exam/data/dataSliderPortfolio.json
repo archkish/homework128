@@ -1,0 +1,94 @@
+[
+  {
+    "id": "1",
+    "title": "Faces of Resilience",
+    "image": "../assets/images/w1.png",
+    "date": "March 2022",
+    "fotos": "../data/facesOfResilience.json"
+  }, 
+  {
+    "id": "2",
+    "title": "A Wedding Tale",
+    "image": "../assets/images/w2.png",
+    "date": "January 2020",
+    "fotos": "../data/wedding.json"
+  },
+  {
+    "id": "3",
+    "title": "Product Elegance",
+    "image": "../assets/images/w3.png",
+    "date": "January 2020",
+    "fotos": "../data/facesOfResilience.json"
+  },
+  {
+    "id": "4",
+    "title": "Faces of Resilience",
+    "image": "../assets/images/w4.png",
+    "date": "March 2022",
+    "fotos": "../data/wedding.json"
+
+  },
+  {
+    "id": "5",
+    "title": "Innocence Unveiled",
+    "image": "../assets/images/w5.png",
+    "date": "March 2022",
+    "fotos": "../data/facesOfResilience.json"
+
+
+  },
+  {
+    "id": "6",
+    "title": "Elegance in Monochrom",
+    "image": "../assets/images/w6.png",
+    "date": "March 2022",
+    "fotos": "../data/wedding.json"
+
+  },
+  {
+    "id": "7",
+    "title": "A Wedding Tale",
+    "image": "../assets/images/w7.png",
+    "date": "March 2022",
+    "fotos": "../data/facesOfResilience.json"
+
+  },
+  {
+    "id": "8",
+    "title": "Corporate Summit",
+    "image": "../assets/images/w8.png",
+    "date": "November 2019",
+    "fotos": "../data/wedding.json"
+
+  },
+  {
+    "id": "9",
+    "title": "Festival of Colors",
+    "image": "../assets/images/w9.png",
+    "date": "March 2022",
+    "fotos": "../data/facesOfResilience.json"
+  },
+  {
+    "id": "10",
+    "title": "Product Elegance",
+    "image": "../assets/images/w10.png",
+    "date": "March 2022",
+    "fotos": "../data/wedding.json"
+
+  },
+  {
+    "id": "11",
+    "title": "Brand Storytelling",
+    "image": "../assets/images/w11.png",
+    "date": "November 2019",
+    "fotos": "../data/facesOfResilience.json"
+
+  },
+  {
+    "id": "12",
+    "title": "Culinary Delights",
+    "image": "../assets/images/w12.png",
+    "date": "March 2022",
+    "fotos": "../data/wedding.json"
+  }
+]

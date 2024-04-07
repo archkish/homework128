@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Wedding Photography",
+    "price": "900",
+    "services": {
+      "one": "Capture the magic of your special day.",
+      "two": "Includes full-day coverage, a second photographer, and 300+ professionally edited images.",
+      "three": "Customizable packages are available to suit your specific wedding needs."
+    }
+  },
+  {
+    "name": "Party Coverage",
+    "price": "800",
+    "services": {
+      "one": "Preserve the fun and excitement of your event.",
+      "two": "Includes up to 4 hours of coverage and 150+ professionally edited images.",
+      "three": "Additional hours can be added at $150 per hour."
+    }
+  },
+  {
+    "name": "Corporate Events",
+    "price": "950",
+    "services": {
+      "one": "Tailored solutions for corporate gatherings, conferences, and seminars.",
+      "two": "Contact us for a personalized quote based on your event's requirements."
+    }
+  }
+  
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Product Photography",
+    "price": "500",
+    "services": {
+      "one": "Showcase your products in the best light.",
+      "two": "Includes a half-day photoshoot, 20 professionally edited product images, and high-resolution files.",
+      "three": "Additional images can be purchased at $20 each."
+    }
+  },
+  {
+    "name": "Real Estate Photography",
+    "price": "700",
+    "services": {
+      "one": "Highlight the beauty of your properties.",
+      "two": "Includes interior and exterior shots, a 2-hour photoshoot, and 25 professionally edited images.",
+      "three": "Additional images can be purchased at $20 each."
+    }
+  },
+  {
+    "name": "Brand Photography",
+    "price": "750",
+    "services": {
+      "one": "Craft a visual narrative that aligns with your brand identity.",
+      "two": "Contact us to discuss your brand photography needs and receive a personalized quote."
+    }
+  } 
+]

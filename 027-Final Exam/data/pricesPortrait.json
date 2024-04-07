@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Individual Session",
+    "price": "250",
+    "services": {
+        "one": "Ideal for capturing your unique personality and style.",
+        "two": "Includes a 2-hour photoshoot and 20 professionally edited images.",
+        "three": "Additional images can be purchased at $10 each."
+    }
+  },
+  {
+    "name": "Family Session",
+    "price": "400",
+    "services": {
+      "one": "Perfect for creating lasting memories with your loved ones.",
+      "two": "Includes a 3-hour photoshoot and 30 professionally edited images.",
+      "three": "Additional images can be purchased at $10 each."
+    }
+  },
+  {
+    "name": "Couple Session",
+    "price": "300",
+    "services": {
+      "one": "Celebrate your love story with an intimate photoshoot.",
+      "two": "Includes a 2.5-hour photoshoot and 25 professionally edited images.",
+      "three": "Additional images can be purchased at $10 each."
+    }
+  }
+  
+]

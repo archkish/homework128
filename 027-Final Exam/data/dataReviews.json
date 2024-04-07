@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Emily Johnson",
+    "location": "USA, California",
+    "descr": "Damien's photography doesn't just capture moments; it captures emotions. Hes work is simply mesmerizing.",
+    "rate":3,
+    "links": {
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://twitter.com/",
+      "linkedin": "https://www.linkedin.com/"
+    }
+  }, 
+  {
+    "name": "Samantha Davis",
+    "location": "USA, California",
+    "descr": "I was blown away by Damien's ability to capture the essence of our wedding day. Hes photographs are our memories.",
+    "rate": 5,
+    "links": {
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://twitter.com/",
+      "linkedin": "https://www.linkedin.com/"
+    }
+  }, 
+  {
+    "name": "John Smith",
+    "location": "USA, California",
+    "descr": "Damien has an incredible talent for making every event feel effortless, and the results speak for themselves.",
+    "rate": 4,
+    "links": {
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://twitter.com/",
+      "linkedin": "https://www.linkedin.com/"
+    }
+  },
+  {
+    "name": "Jony Dee",
+    "location": "USA, California",
+    "descr": "Damien's photography doesn't just capture moments; it captures emotions. Hes work is simply mesmerizing.",
+    "rate":3,
+    "links": {
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://twitter.com/",
+      "linkedin": "https://www.linkedin.com/"
+    }
+  }, 
+  {
+    "name": "Davis Tacker",
+    "location": "USA, Boston",
+    "descr": "I was blown away by Damien's ability to capture the essence of our wedding day. Hes photographs are our memories.",
+    "rate": 4,
+    "links": {
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://twitter.com/",
+      "linkedin": "https://www.linkedin.com/"
+    }
+  }, 
+  {
+    "name": "Johny Valentino",
+    "location": "USA, Chicago",
+    "descr": "Damien has an incredible talent for making every event feel effortless, and the results speak for themselves.",
+    "rate": 5,
+    "links": {
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://twitter.com/",
+      "linkedin": "https://www.linkedin.com/"
+    }
+  }
+
+]
